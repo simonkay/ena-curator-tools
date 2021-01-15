@@ -1,0 +1,36 @@
+ID   MHC class I antigen
+ML   DNA
+AU   RJV
+ST   Gold Standard
+XX
+DE   Homo sapiens partial HLA-B gene for MHC class I antigen, HLA-B*3501 allele,
+DE   exon 2
+XX
+CC   Separate gene and allele names should be entered in the DE, KW and FT
+CC   lines.  Spell 'leucocyte' (English) not 'leukocyte' (American), and add
+CC   the appropriate MHC class, I or II.  All HLA genes except those starting
+CC   with D are class I.  All HLA-D genes are class II.  For more information,
+CC   see the group immunology handouts.
+RL   http://www.ebi.ac.uk/imgt/hla/ The IMGT/HLA Database
+XX
+KW   HLA-B gene; HLA-B*3501 allele; human leucocyte antigen B;
+KW   major histocompatibility complex; MHC class I antigen.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..280
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="genomic DNA"
+FT                   /tissue_type="peripheral blood"       
+FT                   /cell_type="B-lymphocyte"
+FT                   /chromosome="6"
+FT   CDS             <1..>280
+FT                   /codon_start=1
+FT                   /gene="HLA-B"
+FT                   /allele="HLA-B*3501"
+FT                   /product="MHC class I antigen"
+FT                   /function="antigen presenting molecule"
+FT   exon            1..280
+FT                   /number=2
+FT                   /gene="HLA-B"
+FT                   /allele="HLA-B*3501"

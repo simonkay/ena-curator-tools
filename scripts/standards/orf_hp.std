@@ -1,0 +1,38 @@
+ID   Unidentified ORF's
+ML   DNA
+AU   RJV
+ST   Gold Standard
+XX
+DE   Arabidopsis thaliana ORF1 and ORF2 DNA for hypothetical proteins
+XX
+KW   ORF1; ORF2.
+XX
+CC   Do not include "hypothetical protein" in the keywords.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..2380
+FT                   /organism="Arabidopsis thaliana"
+FT                   /mol_type="genomic DNA"
+FT                   /cultivar="columbia"
+FT                   /chromosome="1"
+FT   CDS             join(<1..145,234..473)
+FT                   /codon_start=1
+FT                   /note="ORF1"
+FT                   /product="hypothetical protein"
+CC   The /note and not the /gene qualifier should be used for the ORF name.  In
+CC   a few rare cases ORF may be accepted as a gene name, but only if used with
+CC   a recognised product, not "hypothetical protein".  For unidentified ORFs
+CC   the product should always be "hypothetical protein".
+FT   exon            <1..145
+FT                   /number=1
+FT                   /note="ORF1"
+FT   intron          146..233
+FT                   /number=1
+FT                   /note="ORF1"
+FT   exon            234..473
+FT                   /number=2
+FT                   /note="ORF1"
+FT   CDS             complement(968__2380)
+FT                   /note="ORF2"
+FT                   /product="hypothetical protein"

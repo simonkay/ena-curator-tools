@@ -1,0 +1,32 @@
+ID   Environment sample
+ML   DNA
+AU   RJV
+ST   Gold Standard
+XX
+CC   If the environmental sample sequenced is an rRNA gene check that the
+CC   molecule type is DNA.  Organisms should be classified to the lowest
+CC   taxonomic rank, but not made unique. 
+XX
+DE   Uncultured bacterium partial 16S rRNA gene, isolate 123
+XX
+KW   16S rRNA gene; 16S ribosomal RNA.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..586
+FT                   /organism="Uncultured bacterium"
+FT                   /mol_type="genomic DNA"
+FT                   /environmental_sample
+FT                   /isolate="123"
+FT                   /country="United Kingdom:Scotland"
+FT                   /isolation_source="meadow soil"
+XX
+CC   All sequences with an /environmental_sample qualifier must also have an
+CC   /isolation_source qualifier.  The /isolation_source qualifier can be used
+CC   in entries which are not from environmental sources, but should never
+CC   contain country of origin information.
+XX
+FT   rRNA            <1..>586
+FT                   /gene="16S rRNA"
+FT                   /product="16S ribosomal RNA"
+

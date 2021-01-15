@@ -1,0 +1,33 @@
+ID   Site directed mutagenesis
+ML   RNA
+AU   WB
+ST   Gold Standard
+XX
+DE   Pisum sativum site-directed mutant mRNA for ferredoxin NADP+ reductase
+DE   (petE gene)
+XX
+KW   ferredoxin NADP+ reductase; petE gene; site directed mutagenesis. 
+XX
+CC   The misc_difference feature should be used to annotate all types of
+CC   experimentally produced variability, while natural variation should be
+CC   annotated using the /variation feature key.
+CC   This example illustrates a single point mutation, but insertions and
+CC   deletions can also be annotated using the misc_difference feature.
+CC   The details of the experiment are published in the third citation
+CC   listed in the entry and should not be repeated at length in a /note.
+CC   If the sequence for the mutant occurs in the database the accession
+CC   number should be listed in a commment.
+CC   CC   related sequence: accno1.
+XX
+FH   Key             Location/Qualifiers
+FH
+XX
+FT   source          1..506
+FT                   /organism="Pisum sativum"
+FT                   /mol_type="mRNA"
+FT   misc_difference 272
+FT                   /replace="a"
+FT                   /citation=[3]
+FT                   /note="site directed mutagenesis"
+XX
+

@@ -1,0 +1,27 @@
+ID   Transfer RNA
+ML   DNA
+AU   EC
+ST   Gold Standard
+XX
+CC   The sequence of the anticodon on the tRNA is the reverse complement of
+CC   the codon on the mRNA being translated.
+CC   e.g.
+CC   Codon     5' UUC 3'
+CC   Anticodon 3' AAG 5' -> tRNA-Phe (GAA)
+XX
+DE   Yersinia sp. IP134 tRNA-Leu (UUR) gene
+XX
+KW   transfer RNA-Leu (UUR); tRNA-Leu (UUR) gene.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..2345
+FT                   /organism="Yersinia sp. IP134"
+FT                   /mol_type="genomic DNA"
+FT                   /strain="IP134"
+FT   -35_signal      644..650
+FT                   /gene="tRNA-Leu (UUR)"
+FT   tRNA            655..730
+FT                   /gene="tRNA-Leu (UUR)"
+FT                   /anticodon=(pos:678..680,aa:Leu)
+FT                   /product="transfer RNA-Leu (UUR)"

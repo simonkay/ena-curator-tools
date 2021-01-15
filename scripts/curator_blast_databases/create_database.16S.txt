@@ -1,0 +1,6 @@
+Get files from normal NCBI daily-exchange ftp site and put in /ebi/services/tools/curators/scripts/curator_blast_databases/
+edit 16Score.nfa to add lengths and resolve GI->ac - a nicety really
+save 16Score.nfa as 16Score
+pushd /ebi/extserv/bin/wu-blast/;
+./wu-formatdb -t 16S -p F -i /ebi/production/seqdb/embl/tools/curators/scripts/curator_blast_databases/16Score
+popd

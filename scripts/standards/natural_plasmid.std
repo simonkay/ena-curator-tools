@@ -1,0 +1,40 @@
+ID   Natural plasmid
+ML   DNA
+AU   RJV
+ST   Gold Standard
+XX
+CC   Synthetic plasmids should be annotated as cloning vectors.
+XX
+DE   Escherichia coli pZ plasmid
+XX
+KW   trbC gene; transfer protein C; traN gene; transfer protein N;
+KW   incA gene; incompatability protein A; finP gene; 
+KW   fertility inhibition protein P.
+XX
+CC   If the entire plasmid is represented in the entry, then the molecule
+CC   topology must be circular.  If the sequence is not entire, then the
+CC   topology should be linear.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..2245
+FT                   /organism="Escherichia coli"
+FT                   /mol_type="genomic DNA"
+FT                   /plasmid="pZ"
+FT                   /strain="K12"
+FT   rep_origin      6
+FT                   /direction=LEFT
+FT                   /note="ori"
+FT   CDS             complement(567..795))
+FT                   /gene="trbC"
+FT                   /product="transfer protein C"
+FT   CDS             803..1344
+FT                   /gene="traN"
+FT                   /product="transfer protein N"
+FT   CDS             1559..1985
+FT                   /gene="incA"
+FT                   /product="incompatability protein A"
+FT   CDS             join(2004..2245,1..20)
+FT                   /gene="finP"
+FT                   /product="fertility inhibition protein P"
+XX

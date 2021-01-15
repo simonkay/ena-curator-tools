@@ -1,0 +1,43 @@
+ID   Microsatellite
+ML   DNA
+AU   PB and NJA
+ST   Gold Standard
+XX
+CC   Short tandem repeats of 1-6 bp in length found evenly distributed
+CC   throughout the euchromatic genome.  Should not be confused with
+CC   minisatellites or satellites.
+XX
+DE   Homo sapiens microsatellite DNA, locus PentaE, allele 18.4
+XX
+KW   microsatellite; repetitive DNA.
+XX
+CC   The rpt_family qualifier should not be used for microsatellites.
+CC   In cases where the microsatellite has many repeating units it
+CC   is acceptable to leave out the rpt_unit qualifier altogether.
+CC   rpt_type should always be tandem for microsatellites.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..447
+FT                   /db_xref="taxon:9606"
+FT                   /mol_type="genomic DNA"
+FT                   /organism="Homo sapiens"
+FT                   /chromosome="15"
+FT                   /clone="PE271"
+FT   satellite       321..414
+FT                   /note="microsatellite"
+FT                   /note="locus PentaE"
+FT                   /allele="18.4"
+FT                   /rpt_unit_seq="(AAAGA)6(AAAA)1(AAAGA)12"
+FT                   /rpt_type=TANDEM
+XX
+SQ   Sequence 447 BP; 182 A; 81 C; 109 G; 75 T; 0 other;
+    ttaccaacat gaaagggtac caataacaag aaaattgtgg ccaggtgcgg tggttcacgc        60
+    ctgcaatcct agcactttgg gaggccgatg caggtgtatt acctgagctc aggagatcaa       120
+    gaccagcctg ggcaacatgg tgaaaccccg tctctactaa aatacaaaaa attagctggg       180
+    tgtggtggta ggcacctata atcccagcta ctctggaggc tgaaacagga gaatcacttg       240
+    aacccaggag gtggagattg aagtgagccg agatcacgcc attgcactcc agcctgggcg       300
+    actgagcaag actcagtctc aaagaaaaga aaagaaaaga aaagaaaaga aaaaaaagaa       360
+    aagaaaagaa aagaaaagaa aagaaaagaa aagaaaagaa aagaaaagaa aagaaaattg       420
+    taaggagttt tctcaattaa taaccca
+//

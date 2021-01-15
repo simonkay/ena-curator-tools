@@ -1,0 +1,49 @@
+ID   Artificial cloning vector
+ML   DNA
+AU   DH
+ST   Gold Standard
+XX
+CC   Synthetic plasmids should be annotated as cloning vectors.
+XX
+DE   Cloning vector pABC 
+XX
+KW   mob1 gene; mobilization protein 1; Km gene; kanamycin resistance protein;
+KW   rep1 gene; replication protein 1; Cm gene;
+KW   chloramphenicol resistance protein; GFP gene; green fluorescent protein.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..5300
+FT                   /organism="Cloning vector pABC"
+FT                   /mol_type="other DNA"
+FT                   /lab_host="Escherichia coli"
+FT                   /note="pABC is a derivative of the broad host range
+FT                   cloning vector pXYZ"
+FT                   /focus
+FT   source          1..5138
+FT                   /organism="Escherichia coli"
+FT                   /strain="K12"
+FT                   /mol_type="other DNA"
+FT   source          5139..5247
+FT                   /organism="Aequorea victoria"
+FT                   /mol_type="other DNA"
+FT                   /dev_stage="adult"
+FT   source          5248..5300
+FT                   /organism="Escherichia coli"
+FT                   /mol_type="other DNA"
+FT                   /strain="K12"
+FT   CDS             1..799
+FT                   /gene="mob1"
+FT                   /product="mobilization protein 1"
+FT   CDS             complement(1697..2512)
+FT                   /gene="Km"
+FT                   /product="kanamycin resistance protein"
+FT   CDS             3037..3711
+FT                   /gene="rep1"
+FT                   /product="replication protein 1"
+FT   CDS             complement(4170..4829)
+FT                   /gene="Cm"
+FT                   /product="chloramphenicol resistance protein"
+FT   CDS             5139..5247
+FT                   /gene="GFP"
+FT                   /product="green fluorescent protein" 

@@ -1,0 +1,24 @@
+ID   5.8S rRNA and ITS
+ML   DNA
+AU   RJV
+ST   Gold Standard
+XX
+DE   Drosophila melanogaster ITS1, 5.8S rRNA gene and ITS2, strain Oregon R
+XX
+KW   5.8S rRNA gene; 5.8S ribosomal RNA; internal transcribed spacer 1; ITS1;
+KW   internal transcribed spacer 2; ITS2.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..1012
+FT                   /organism="Drosophila melanogaster"
+FT                   /mol_type="genomic DNA"
+FT                   /strain="Oregon R"
+FT                   /dev_stage="adult"
+FT   misc_feature    450..582
+FT                   /note="internal transcribed spacer 1, ITS1"
+FT   rRNA            583..727
+FT                   /gene="5.8S rRNA"
+FT                   /product="5.8S ribosomal RNA"
+FT   misc_feature    728..1012
+FT                   /note="internal transcribed spacer 2, ITS2"

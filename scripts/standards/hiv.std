@@ -1,0 +1,104 @@
+ID   HIV complete genome
+ML   DNA
+AU   RJV
+ST   Gold Standard
+XX
+DE   Human immunodeficiency virus 1 complete proviral genome, patient IN-2
+XX
+CC   Include the isolate name in the DE line.  Remember to check that /proviral
+CC   or /virion is included in both the FT and DE, and that the sequenced
+CC   molecule type is appropriate.
+XX
+KW   acquired immune deficiency syndrome; env gene; env polyprotein;
+KW   gag gene; gag polyprotein; gag-pol fusion; glycoprotein gp160;
+KW   long terminal repeat; LTR; nef gene; pol gene; pol polyprotein;
+KW   rev gene; tat gene; vpr gene; vpu gene; vif gene; viral protein U;
+KW   U3 region; U5 region.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..9182
+FT                   /organism="Human immunodeficiency virus 1"
+FT                   /mol_type="genomic DNA"
+FT                   /isolate="patient IN-2"
+FT                   /proviral
+FT   LTR             1..192
+FT   repeat_region   15..71
+FT                   /note="R repeat 5' copy"
+FT   stem_loop       16..74
+FT                   /note="trans-activation response element"
+FT                   /standard_name="TAR"
+CC   The stem loop position must fully contain the TAR bulge and TAR loop
+CC   features
+FT   misc_structure  38..39
+FT                   /note="TAR bulge"
+FT   misc_structure  44..50
+FT                   /note="TAR loop"
+CC   The TAR loop sequence must be CTGGGA
+FT   repeat_region   72..192
+FT                   /note="U5 region"
+FT   CDS             348..1886
+FT                   /gene="gag"
+FT                   /product="gag polyprotein"
+FT   CDS             join(348..1658,1663..4702)
+FT                   /product="gag-pol fusion polyprotein precursor"
+FT                   /translation="ENLAFPQGEARKFSSEQTGTNSPTSRECWDGGRDSLLSEAGTEG
+FT                   GTISSFNFPQITLWQRPLFKVRIGEQLIKPLLNTGANDTVLEKINLPGKWKPKMIGGI
+FT                   GFIKLRQYDQILMEICGKKAIGSVLVGPTPVNIIGQNILTPIGCTLNFPISPIETVPV
+FT                   LKPGMDGPRVKQWPLTEEKIKALIEICTEMEKEGKISKIGPENPYNTPVFAIKKKDST
+FT                   WRKLVDFRELNKRTQDFWEVQLGIPHPAGLKKKESVTVLDVGDAYFSVPLDKDFRKYT
+FT                   FTIPSINSETPGIRYQYNVLPQGWKGSPSIFQSSMIKILEPFRAKNPEIVIYQYMDDL
+FT                   VGSDLEIGQHRAKIEELREHLLRWGFTTPDKKHQKEPPFLWMGYELHPDKWTVQPIQL
+FT                   DKDSWTVNDIQKLVGKLNWASQIYAGIKVKQLCKLLRGAKALTDIVTLTEEAELELAE
+FT                   REILKEPVHGVYYDPTKDLIAEIQKQGQDQWTYQIYQEPFKNLKTGKYAKKRSAHTND
+FT                   RQLAEVVQKAAMESIVIWGKTPKFRLPIQRETWETWWMEYWQATWIPEWEFVNTPPLV
+FT                   LWYQLEKDPIAGAETFYVDGAANRETKLGKAGYVTDRGRQKVVSLTETTNQKTELHAI
+FT                   LALQDSGSEVNIVTDSQYALGIIQAQPDRSESELVNLIIEKLIEKDKVYLSWVPAHKG
+FT                   GGNEQVDKLVSNGIRKVLFLDGIDKAQEEHEKYHSNWRAMASDFNLPPIVAKEIVASC
+FT                   KCQLKGEAMHGQVDCSPGIWQLDCTHLEGKVILVAVHVASGYIEAEVIPAETGQETAY
+FT                   ILKLAGRWPVKVIHTDNGSNFTSAAVKAACWWANVKQEFGIPYNPQSQGVVESMNKEL
+FT                   KIITQVRDQAEHLKTAVQMAVFIHNFKRKGGIGGYSAGERIIDIIASDIQTKELQKQI
+FT                   KIQNFRVYYRDSRDPLERTAKLLWKGEGAVVIQDNSDIKVVPRRKAKIIKDYGKQMAG
+FT                   DCMAGRQDED"
+FT   CDS             4635..5213
+FT                   /gene="vif"
+FT                   /product="vif protein"
+FT   CDS             5153..5440
+FT                   /gene="vpr"
+FT                   /product="vpr protein"
+FT   CDS             join(5421..5636,7931..8020)
+FT                   /gene="tat"
+FT                   /product="tat protein"
+FT   CDS             join(5560..5634,7932..8168)
+FT                   /gene="rev"
+FT                   /product="rev protein"
+FT   CDS             5655..5906
+FT                   /gene="vpu"
+FT                   /product="viral protein U"
+FT   CDS             5839..8367
+FT                   /gene="env"
+FT                   /product="envelope glycoprotein precursor gp160"
+FT   CDS             8369..9007
+FT                   /gene="nef"
+FT                   /product="nef protein"
+FT   LTR             8676..9137
+FT   repeat_region   8676..9137
+FT                   /note="U3 region"
+FT   protein_bind    9045..9057
+FT                   /bound_moiety="NFKB 1"
+FT   protein_bind    9059..9068
+FT                   /bound_moiety="NFKB 2"
+FT   protein_bind    9072..9090
+FT                   /bound_moiety="Sp1"
+FT   TATA_signal     9111.9115
+FT   repeat_region   9138..>9182
+FT                   /note="R repeat 3' copy"
+XX
+
+
+
+
+
+
+
+

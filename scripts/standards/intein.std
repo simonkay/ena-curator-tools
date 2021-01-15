@@ -1,0 +1,31 @@
+ID   Intein
+ML   DNA
+AU   MAT
+ST   Gold Standard
+XX
+DE   Mycobacterium gastri partial pps1 gene including Mga pps1 intein
+XX
+KW   pps1 gene; Mga pps1 intein; extein.
+XX
+FH   Key             Location/Qualifiers
+FH   
+XX
+CC   Not all inteins have functions, check with the submitter.
+XX
+FT   source          1..1602
+FT                   /organism="Mycobacterium gastri"
+FT                   /mol_type="genomic DNA"
+FT                   /strain="HB4389"
+FT   CDS             <1..>1602
+FT                   /codon_start=1
+FT                   /gene="pps1"
+FT                   /product="Pps1 protein"
+FT   mat_peptide     join(<1..45,1180..>1602)
+FT                   /gene="pps1"
+FT                   /product="Pps1 protein"
+FT                   /note="extein"
+FT   mat_peptide     46..1179
+FT                   /gene="pps1"
+FT                   /note="Mga Pps1 intein"
+FT                   /function="endonuclease"
+XX

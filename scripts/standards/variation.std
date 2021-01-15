@@ -1,0 +1,69 @@
+ID   Natural variation
+ML   RNA
+AU   WB
+ST   Gold Standard
+XX
+DE   Mus musculus mRNA for ubiquitin conjugating enzyme (Ubc25 gene),
+DE   Ubc252a allele
+XX
+KW   Ubc25 gene; ubiquitin conjugating enzyme; Ubc252a allele.
+XX
+CC  The variation feature should be used for designated alleles and all
+CC  types of naturally occurring variability, including point mutations,
+CC  insertions and deletions, even if the variant has not been designated
+CC  as an allele. Polymorphic variability between related strains or
+CC  individuals, such as RFLPs and SSCPs should also be described using
+CC  the variation feature.
+CC  Experimentally produced variability should be annotated using the
+CC  misc_difference feature key.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..886
+FT                   /organism="Mus musculus"
+FT                   /mol_type="mRNA"
+FT                   /strain="BR4"
+FT   CDS             172..795
+FT                   /gene="Ubc25"
+FT                   /allele="Ubc252a"
+FT                   /product="ubiquitin conjugating enzyme"
+FT   variation       459
+FT                   /replace="a"
+FT                   /allele="Ubc252b"
+FT                   /frequency=".4"
+FT                   /citation=[3]
+FT   variation       511..512
+FT                   /replace="agctagcgagctagacgatcgatcggcgggggcctctatcgatt"
+FT                   /allele="Ubc252c"
+FT                   /citation=[3]
+FT   variation       790..798
+FT                   /standard_name="Ubc252d variant"
+FT                   /replace=""
+FT                   /citation=[3]
+XX
+CC  This example illustrates a single point mutation in the Ubc252b allele, an
+CC  insertion of 42 base pairs in the same allele, and a 9 base pair deletion in
+CC  the Ubc252d variant.  The details of the alleles and the variant are
+CC  published in the third citation.  If the sequences for the two alleles and
+CC  the variant exist in the database, the accession numbers should be listed
+CC  in a commment.
+XX
+CC  CC   related sequences: accno1, accno2, accno3
+XX
+SQ   Sequence 886 BP; 234 A; 238 C; 208 G; 206 T; 0 other;
+     gggccggagc ctcggcggcg gcttcttttc ccgccccccc ggtgcccccc ccaggctgcc        60
+     tccatttcct caaggaaggt tcctcggcgc tctccctccc ccacagcgta gcggcgcacg       120
+     agcgggccgg gcgggcggcc gagaagtttt cccagagata agttcaccaa gatgtccagt       180
+     gacaggcaaa ggtcggatga tgagagccct agcaccagca gtggcagttc agatgcagat       240
+     cagcgagacc ctgccgctcc aaagcccgag gaacaggaag aaagaaaacc ttctgccacc       300
+     cagcagaaga aaaacaccaa actctctagc aaaacgactg ctaagttatc cactagtgct       360
+     aaaagaattc agaaggagct agcagagata acccttgatc ctcctcctaa ctgcagtgct       420
+     gggcctaaag gagataacat ttatgaatgg aggtcaacta tacttggtcc accaggttct       480
+     gtatatgaag gtggtgtttt ttttctggat atcacatttt cttcagatta tccatttaag       540
+     ccaccaaagg ttactttccg taccagaatc tatcactgca acatcaacag tcagggagtc       600
+     atctgcctgg atattctgaa agacaactgg agtcctgctt tgactatttc aaaggttttg       660
+     ctctctattt gttccctttt gacagattgc aaccctgcgg atcctctggt cggaagcata       720
+     gccactcagt atttgaccaa cagagcagaa catgacagga tagccagaca gtggaccaag       780
+     agatacgcaa cataattcac atcatttgta tgcagtgtga aggagcagaa ggcctcttcc       840
+     cactgtgctg cggatcttta tagcctttac aatacggact tctgtg                      886
+//

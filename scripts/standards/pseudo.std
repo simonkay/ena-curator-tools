@@ -1,0 +1,20 @@
+ID   Pseudo
+ML   DNA
+AU   DH
+ST   Gold Standard
+XX
+DE   Homo sapiens ahb pseudogene
+XX
+KW   alpha haemoglobin; ahb gene.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..3567
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="genomic DNA"
+FT                   /dev_stage="adult"
+FT                   /sex="female"
+FT   CDS             128..3456
+FT                   /pseudo
+FT                   /gene="ahb"
+ 

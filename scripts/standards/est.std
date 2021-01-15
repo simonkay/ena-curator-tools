@@ -1,0 +1,27 @@
+ID   Expressed sequence tag (EST)
+ML   RNA
+AU   RJV
+ST   Gold Standard
+XX
+CC   Remember to change UNA to EST in the ID line
+XX   
+DE   Mus musculus EST, clone fg65-134
+XX
+KW   EST; expressed sequence tag.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..502
+FT                   /organism="Mus musculus"
+FT                   /mol_type="mRNA"
+FT                   /strain="sv129"
+FT                   /dev_stage="16.5 pc embryo"
+FT                   /tissue_type="brain"
+FT                   /clone_lib="SV129-fg"
+FT                   /clone="fg65-134"
+XX
+CC   ESTs must not have a CDS feature.  If the sequence appears to be low
+CC   quality (e.g. single pass), then delete any CDS feature that is present.
+CC   If the sequencing is high quality, then leave the CDS in the entry,
+CC   and do not annotate it as an EST.
+XX

@@ -1,0 +1,26 @@
+ID   Genome survey sequence (GSS)
+ML   DNA
+AU   RJV
+ST   Gold Standard
+XX
+CC   Remember to change UNA to GSS in the ID line
+XX
+DE   Homo sapiens GSS, clone 31Q2
+XX
+KW   GSS; genome survey sequence.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..40
+FT                   /chromosome="9"
+FT                   /mol_type="genomic DNA"
+FT                   /organism="Homo sapiens"
+FT                   /clone_lib="WT34 PAC 2"
+FT                   /clone="31Q2"
+FT                   /map="9p12"
+XX
+CC   GSS division contains: 
+CC   random single pass genome survey sequences, single pass reads from
+CC   cosmid/BAC/YAC ends (may be chromosome specific), exon trapped genomic
+CC   sequences and Alu PCR sequences.
+XX

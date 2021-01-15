@@ -1,0 +1,39 @@
+ID   Synthetic antibody construct
+ML   RNA
+AU   RJV
+ST   Gold Standard
+XX
+DE   Synthetic construct for anti-crotoxin ScFv antibody, clone 
+DE   CTX23-scFv2
+XX
+KW   antibody; heavy chain; immunoglobulin; light chain; ScFv; variable region.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..777
+FT                   /organism="synthetic construct"
+FT                   /mol_type="other RNA"
+FT                   /clone="CTX23-scFv2"
+FT                   /focus
+FT                   /rearranged
+FT   source          1..391
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="other RNA"
+FT   source          439..777
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="other RNA"
+FT   CDS             <1..>777
+FT                   /product="anti-crotoxin ScFv antibody"
+FT                   /note="synthetic"
+FT   V_region        1..391
+FT                   /product="immunoglobulin heavy chain variable region"
+FT   misc_feature    392..438
+FT                   /note="linker sequence"
+FT   V_region        439..777
+FT                   /product="immunoglobulin light chain variable region"
+
+
+
+
+
+

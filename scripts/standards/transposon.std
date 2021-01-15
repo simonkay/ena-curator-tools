@@ -1,0 +1,50 @@
+ID   Transposon
+ML   DNA
+AU   RJV
+ST   Gold Standard
+XX
+DE   Pseudomonas fluorescens transposon Tn123
+XX
+KW   tnpA gene; transposase; tnpR gene; resolvase; Cm gene;
+KW   chloramphenicol resistance protein; transposon. 
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..5667
+FT                   /organism="Pseudomonas fluorescens" 
+FT                   /mol_type="genomic DNA"
+FT                   /strain="246DF"
+FT                   /clone="xyz"
+FT   repeat_region   21..5300
+FT                   /transposon="Tn123"
+XX
+CC   Use a repeat region that spans the entire transposon.
+XX
+FT   repeat_unit     21..63
+FT                   /rpt_type=INVERTED
+FT                   /rpt_type=TERMINAL
+FT                   /note="left terminal repeat"
+FT   CDS             128..1034
+FT                   /gene="tnpA"
+FT                   /product="transposase"
+FT   CDS             complement(1697..2512)
+FT                   /gene="tnpR"
+FT                   /product="resolvase"
+FT   protein_bind    2613..2876
+FT                   /bound_moiety="resolvase"
+FT                   /note="res site"
+FT   CDS             complement(4170..4829)
+FT                   /gene="Cm"
+FT                   /product="chloramphenicol resistance protein"
+FT   repeat_unit     5250..5300
+FT                   /rpt_type=INVERTED
+FT                   /rpt_type=TERMINAL
+FT                   /note="right terminal repeat"
+
+
+
+
+
+
+
+

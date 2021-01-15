@@ -1,0 +1,137 @@
+EMBL NUCLEOTIDE SEQUENCE DATABASE SUBMISSION FORM
+HOW TO USE THIS FORM - PLEASE READ FIRST
+1) WEBIN: THE WORLD WIDE WEB SUBMISSION TOOL
+============================================
+If you have access to the World Wide Web then DO NOT use this form. Use the
+WebIn form on the World Wide Web at 
+If you do not have access to the World Wide Web then please use this form
+and email it to DATASUBS@EBI.AC.UK. 
+It is only necessary to submit to one database. Public data are exchanged
+between EMBL, GenBank and DDBJ on a daily basis. 
+2) MULTIPLE SUBMISSIONS
+=======================
+If you have more than one but less than 25 sequences to submit, copy this
+form and send all the submissions together in one email with a note saying
+how many sequences you are sending.
+3) BULK SUBMISSIONS
+===================
+If you have more than 25 related sequences to submit DO NOT send them all
+using this form. Instead email DATASUBS@EBI.AC.UK and include the following
+information
+a) how many sequences you are going to submit
+b) a short explanation of how the sequences are related
+c) what type of differences there are between the entries (e.g. isolate)
+d) one completed email submission form as an example
+You will be contacted by a curator who will create a template for you which
+you should then use to submit all of the sequences.
+4) UPDATES
+==========
+DO NOT use this form for submitting updates or corrections.
+If you are sending an update please complete the update form available on
+the web at: http://www.ebi.ac.uk/ebi_docs/update.html or get a copy of the
+update form via anonymous FTP: 
+ftp://ftp.ebi.ac.uk/pub/databases/embl/release/update.doc
+If you need help with updates contact UPDATE@EBI.AC.UK
+5) PROTEIN SEQUENCES
+====================
+DO NOT use this form to submit protein sequences.
+For submissions to the SWISS-PROT protein sequence databank access the
+World Wide Web at http://www.ebi.ac.uk/ebi_docs/swissprot_db/swisshome.html
+or email DATALIB@EBI.AC.UK
+6) ACCESSION NUMBERS AND CONFIDENTIALITY
+========================================
+Your data can be made public immediately, or they can be kept confidential
+until a release date which you provide. Confidential data are ALWAYS made
+available to the public after publication.
+If your data contain all the information we require we will assign unique
+accession numbers within two working days. We will email you to tell you
+the new accession numbers.
+You should submit your sequence data BEFORE you have galley proofs. We
+suggest that the following text be used to cite the accession number(s) in
+publication(s): "The nucleotide sequence data reported in this paper will
+appear in the DDBJ/EMBL/GenBank Nucleotide Sequence Database under the
+accession number(s) ________"
+7) FORM FILLING INSTRUCTIONS
+============================
+<============== DO NOT EXCEED THIS LINE WIDTH IN YOUR REPLY ==============>
+To display this form properly choose a fixed width font (e.g. Courier) in
+your editor. If you are saving files in a word processing program then
+please save the file as TEXT ONLY WITH LINE BREAKS. (To do this in
+Microscoft Word you will need to choose File, Save as, Save file type as,
+and select Text only with line breaks). Please do not send files that are
+saved in Word or Wordperfect format. Processing of the submission may be
+delayed if your email is text wrapped, encoded or binhexed.
+8) ENTERING FEATURES AND LOCATIONS
+==================================
+Enter the feature key from the list given in Appendix I at the end of this
+document. Enter the locations, gene name, product name, and EC number,
+where appropriate. Use < and > in the locations to show whether the feature
+is partial at the 5' end and/or the 3' end. Mark with an X in the box [ ]
+if the feature is on the complementary strand and if you have experimental
+evidence for the feature.
+If you do not provide any features or adequate locations and names for the
+features you will be contacted for more information before an accession
+number is assigned to the sequence. For CDS features you must provide a gene
+name AND a product name, even if the product name is putative.
+If a CDS is partial at the 5' end then write the codon start number. This
+is the number (1,2 or 3) of the first base of the first complete codon of
+the translation. For example the following CDS is partial and the codon
+start is 2 because the first complete codon, T, starts with the base a,
+which is the second base in the feature.
+DNA         tacatcgatg...
+Translation  T  S  M...
+DATASUBS@EBI.AC.UK
+I.  CONFIDENTIAL STATUS
+(Date format DD-MMM-YYYY e.g. 30-JUN-1998)
+II.  CONTACT INFORMATION
+III. CITATION INFORMATION
+(e.g. Smith A.B.)
+(Copy line for extra authors)
+Publication status
+Mark one of the following
+IV. SEQUENCE INFORMATION
+Molecule type
+Mark one of the following  
+Mark if either of these apply
+Checked for vector
+V. SOURCE INFORMATION
+Mark one if immunoglobulin
+or T cell receptor 
+or T cell receptor
+Mark one if viral
+Mark one if from an organelle
+Further source information
+(e.g. taxonomy, specimen voucher etc)
+VI. FEATURES OF THE SEQUENCE
+YOU MUST DESCRIBE
+YOU MUST DESCRIBE AT LEAST ONE FEATURE OF THE SEQUENCE OR THERE WILL BE A
+DELAY IN THE PROCESSING OF YOUR SUBMISSION
+Complete the block below for every feature you need to describe. If you
+have more than one feature copy the block as many times as you require. For
+help see 8) ENTERING FEATURES AND LOCATIONS above.
+help see 3) ENTERING FEATURES AND LOCATIONS above.
+FEATURE NO.
+FEATURE NO. 
+FEATURE NO.  
+FEATURE NO.   
+FEATURE NO.    
+VII. SEQUENCE INFORMATION
+Enter the sequence data below
+(IUPAC nucleotide base codes, Nucl. Acids Res. 13: 3021-3030, 1985)
+BEGINNING OF SEQUENCE:
+END OF SEQUENCE
+Include the translation for each CDS feature below.
+BEGINNING OF TRANSLATION:
+END OF TRANSLATION
+These data will be shared among the
+(DNA Data Bank of Japan; Mishima, Japan); 
+(EBI, Cambridge, UK); GenBank (NCBI, Bethesda, USA)
+Sequence Database (Geneva, Switzerland and
+Protein Information Database in Japan
+Institute For Protein Sequence Data
+Biomedical Research Foundation Protein 
+Washington, D.C., USA.)
+EMBL Data Submissions                     E-mail    datasubs@ebi.ac.uk
+European Bioinformatics Inst.             Telephone +44 (0)1223 494499
+Hinxton Hall, Hinxton                     Telefax   +44 (0)1223 494472
+Cambridge CB10 1SD, UK

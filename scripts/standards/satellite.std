@@ -1,0 +1,21 @@
+ID   Satellite DNA
+ML   DNA
+AU   PH
+ST   Gold Standard
+XX
+DE   Homo sapiens alpha satellite DNA, clone HS173-a
+XX
+KW   alpha satellite; repetitive DNA.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..342
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="genomic DNA"
+FT                   /chromosome="11"
+FT                   /map="11p15.5"
+FT                   /clone="HS173-a"
+FT   satellite       1..342
+FT                   /rpt_family="alpha satellite suprachromosomal family 4"
+FT                   /rpt_unit_range=1..171
+FT                   /rpt_type=TANDEM

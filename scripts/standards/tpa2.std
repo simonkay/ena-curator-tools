@@ -1,0 +1,43 @@
+ID   Third Party Annotation
+ML   RNA
+AU   KB
+ST   Preliminary
+XX  
+DE   TPA: Danio rerio mRNA for melanophilin (mlph gene)
+XX  
+CC   All third party annotation entries have description lines which begin TPA:
+XX
+KW   Third Party Annotation; TPA; melanophilin; mlph gene. 
+XX
+CC   They should also all include the keywords TPA and Third Party Annotation
+XX 
+CC
+XX
+RL   http://www3.ebi.ac.uk/internal/seqdb/curators/protocols/tpa.html TPA processing
+XX
+AH   TPA_SPAN       PRIMARY_IDENTIFIER  PRIMARY_SPAN   COMP
+AS   1-609          BG307239.1          1-608      
+AS   610-821        CN506978.1          554-760        
+AS   822-1358       BQ259436.1          19-554         
+AS   1359-1485      BG308663.1          6-130          C
+XX
+CC   ^^^^^^^^^      ^^^^^^^^^^          ^^^^^^^        ^
+CC   base span in   Primary accession   base span in   C indicates complement
+CC   TPA entry      number              primary entry  strand in primary entry
+XX   
+FH   Key             Location/Qualifiers
+FH   
+FT   source          1..1487
+FT                   /organism="Danio rerio"
+FT                   /mol_type="mRNA"
+FT   5'UTR           1..293
+FT   CDS             294..932
+FT                   /gene="mlph"
+FT                   /product="melanophilin"
+FT                   /translation="MILCVEGPSPRALLPFSSPRRIDEPFLTIEDASKDYRALTLNFSY
+FT                   LDASGWYWGGISASEAHSVLKGASEGTFLIRDSSHPDYMLTLSVKTVRGPTNVRIEYRQ
+FT                   CRFSLDSSSPARSHLQSFPDVHSLVQHYVGSKSEKNEEKMEEAHHVISSAPKECSVLLK
+FT                   LKKPIHCPQGFPSLKHLTRLVINKHTSSTEMLPLPNPLLYYLQNYPFQL"
+FT   3'UTR           933..1487
+XX   
+SQ   Sequence 1487 BP; 386 A; 365 C; 342 G; 394 T; 0 other 

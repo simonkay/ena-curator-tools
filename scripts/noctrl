@@ -1,0 +1,7 @@
+#!/bin/csh
+if ($#argv != 1) then
+   echo "usage: $argv[0] noctrl <inputfile>"
+   exit
+endif
+tr -d '\13''\15' < $argv[1] > NEW$argv[1]
+mv NEW$argv[1] $argv[1]

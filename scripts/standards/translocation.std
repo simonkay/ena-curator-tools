@@ -1,0 +1,28 @@
+ID   Translocation breakpoint
+ML   DNA
+AU   WAB
+ST   Gold Standard
+XX
+DE   Homo sapiens t(7;19)(q21;p12) translocation breakpoint sequence in
+DE   multiple carcinoma
+XX
+KW   translocation breakpoint.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..1876
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="genomic DNA"
+FT                   /tissue_type="carcinoma"
+FT                   /chromosome="t(7;19)"
+FT                   /map="t(7;19)(q21;q12)" 
+FT   source          1..931
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="genomic DNA"
+FT                   /chromosome="7"
+FT                   /map="7q21" 
+FT   source          932..1876
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="genomic DNA"
+FT                   /chromosome="19"
+FT                   /map="19q12" 

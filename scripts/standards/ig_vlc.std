@@ -1,0 +1,30 @@
+ID   Immunoglobulin lambda-3
+ML   RNA
+AU   EC
+ST   Gold Standard
+XX
+DE   Mus musculus partial mRNA for human gastric cancer-specific immunoglobulin
+DE   lambda-3 variable region (IGLV1 gene) 
+XX
+KW   immunoglobulin lambda-3; light chain; variable region; IGLV1 gene.
+XX
+CC   Gene names should be in capital letters.  The first three letters indicate
+CC   the locus (IGH, IGK, IGL), and these are followed by V, D, J or C and
+CC   sometimes a gene number.  For more information see the group immunology
+CC   handout.
+RL   http://imgt.cines.fr:8104/textes/IMGTScientificChart/ IMGT nomenclature
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   Source          1..318
+FT                   /organism="Mus musculus"
+FT                   /mol_type="mRNA"
+FT                   /strain="Balb/c"
+FT                   /cell_type="hybridoma"
+FT                   /rearranged
+FT   CDS             1..>180
+FT                   /gene="IGLV1"
+FT                   /product="immunoglobulin lambda-3 variable region"
+FT   V_region        1..>180
+FT                   /gene="IGLV1"
+FT                   /product="immunoglobulin lambda-3 variable region"

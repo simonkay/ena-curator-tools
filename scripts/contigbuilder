@@ -1,0 +1,302 @@
+#!/ebi/production/seqdb/embl/tools/bin/perl
+
+#REVISION HISTORY
+#CONTIG BUILDER 1.0 - Peter Sterk, 22 November 1997: creates JOIN + contiguous FastA sequence
+#CONTIG BUILDER 1.1 - Peter Sterk, 26 November 1997: conversion to EMBL format added
+
+$prog_version = "CONTIG BUILDER 1.1 - Peter Sterk, 26 November 1997";
+print $prog_version,"\nType \'contigbuilder -h\' for help\n";
+if ( $ARGV[0] eq "-h") {
+    &printhelp;
+    die ("\n");
+        } elsif ( $ARGV[0] eq "") {
+            }    else { print "Usage: contigbuilder (-h). Argument $ARGV[0] ignored.\n";
+}
+
+print "Organism name? ";
+chop($organism = <STDIN>);
+
+print "File containing overlap information? ";
+chop($overlapfile = <STDIN>);
+
+print "Output file for join statement? (press RETURN for screen output): ";
+chop($output = <STDIN>);
+
+if ($output eq "") {
+              print $prog_version,"\n";
+              $joinoutput = "STDOUT";
+} else {
+        $joinoutput = "JOINOUTPUT";
+        unless (open($joinoutput, ">$output")) {
+              die ("Cannot open output file $output\n");
+	  }
+        print $joinoutput $prog_version,"\n";
+        close($joinoutput);
+        open($joinoutput, ">>$output");
+    }
+&cleanup_overlap;       #remove leading spaces/tabs/commas and empty lines 
+
+open(INPUTFILE, "${overlapfile}.tmp") || die ("Could not open input file\n");
+
+#eval '$'.$1.'$2;' while INPUTFILE =~ /^([A-Za-z_0-9]+=)(.*)/ && shift;
+			# process any FOO=bar switches
+
+$[ = 1;			# set array base to 1
+$\ = "\n";		# set output record separator
+
+$FS = "[ \t,]+";#comma(s)/tab(s)/space(s)-delimited fields (input)
+$, = '';
+
+#create array "location"
+
+while (<INPUTFILE>) {
+    chop;	# strip record separator
+    @Fld = split($FS, $_, 9999);
+
+    $record_number += 1;
+    for ($i = 1; $i <= 3; ++$i) {
+	$location{$., $i} = $Fld[$i];
+    }
+}
+
+#Calculate the join coordinates:
+#join(acno1:beginloc..endloc,.....,acnox:beginloc..endloc)
+
+print $joinoutput $organism,'. Contig constructed from ', $overlapfile;
+print $joinoutput 'join(', $location{1, 1}, ':', $location{1, 2}, '..', $location{1,3},  ',';
+for ($n = 2; $n < $record_number; ++$n) {
+    print $joinoutput $location{$n, 1}, ':', $location{$n - 1, 3} - $location{$n, 2} + 2, '..', $location{$n, 3} - $location{$n, 2} + 1, ',';
+}
+print $joinoutput $location{$record_number, 1}, ':', $location{$record_number - 1, 3} - $location{$record_number, 2} + 2, '..', $location{$record_number, 3} - $location{$record_number, 2} + 1, ')';
+
+unlink("${overlapfile}.tmp");   #delete temporary file
+
+# CREATION THE CONTIG IN FASTA FORMAT
+$\ = "";		# no longer automatically add newline on print
+
+print "\nCreate a contiguous FastA sequence file (Y/N)? ";
+chop($yesfasta = <STDIN>);
+unless ($yesfasta =~ /^[Yy][eE]?[sS]?/) {
+    print "Finished.\n";
+    die ("\n");
+}
+print "\nWhat should I call the output file (.fasta will be added)? ";
+chop($fastafile = <STDIN>);
+open(FASTASEQFILE, ">${fastafile}.tempfasta");
+print FASTASEQFILE ">",$organism,"\n";
+close(FASTAFILE);
+
+print "\nEMBL flatfiles should be in the current directory (acno.dat, lowercase).\nDo you want me to grab all entries from Oracle (Y/N)? ";
+chop($yesgrab = <STDIN>);
+for ($i = 1; $i <= $record_number ; $i++) {
+        $location{$i, 1} = lc("$location{$i, 1}");   #Convert accession numbers to lowercase
+}
+if ($yesgrab =~ /^[Yy][eE]?[sS]?/) {
+    print "Now grabbing database entries, this may take a while.\n";
+     for ($i = 1; $i <= $record_number ; $i++) {
+     system("/homes/sterk/annot/util/cbgrab $location{$i, 1}");
+    }
+
+}
+#Convert flatfiles to sequence files, sequence on a single line, no spaces, numbers etc
+for ($i = 1; $i <= $record_number ; $i++) {
+    $acno = $location{$i, 1};
+    &flatfile_2_seqfile;
+}
+
+$patternlength = 0;
+while ($patternlength == 0 || !$patternlength =~ /[0-9]+/ || $patternlength > 50) {
+    print "Length of overlap that should match next sequence (<=50nt, default 50): ";
+    chop($patternlength = <STDIN>);
+    if ($patternlength eq "") {
+        $patternlength = 50;
+    }
+}
+$pattern = "." x $patternlength . "\$";
+
+#Append the first sequence to the .fasta file
+open(FASTASEQFILE, ">>${fastafile}.tempfasta");
+open(FIRSTSEQ,"${location{1, 1}}.tempseq");
+while($sequence = <FIRSTSEQ>) {
+    print FASTASEQFILE  $sequence;
+}
+
+#Read sequence files and select the search sequence. Then build fasta file
+for ($i = 1; $i < $record_number ; $i++) {
+    $acnopattern = $location{$i, 1};
+    $acnosearch  = $location{$i+1, 1};
+    open(PATTERNSEQ,"${acnopattern}.tempseq");
+    $string = <PATTERNSEQ>;
+    $string =~ /$pattern/;
+    $searchpattern = "^.*" . $&;
+    close(PATTERNSEQ);
+    open(SEARCHSEQ,"${acnosearch}.tempseq");
+    while (<SEARCHSEQ>) {
+        s/$searchpattern//;
+        print FASTASEQFILE;
+    }
+}
+print FASTASEQFILE "\n";          #terminate fasta file with line break
+close(FASTASEQFILE);
+#Make lines 60 nt
+system("fold -w 60 ${fastafile}.tempfasta >${fastafile}.fasta");
+
+#Please clean up after yourself
+unlink <*.tempseq>;
+unlink <*.temp2seq>;
+unlink <*.tempfasta>;
+
+print ("${fastafile}.fasta created.\n");
+
+print "\nReformat ${fastafile}.fasta to EMBL format as well (Y/N)? ";  #EMBL format? 
+chop($yesembl = <STDIN>);
+unless ($yesembl =~ /^[Yy][eE]?[sS]?/) {
+    print "Finished.\n";
+    die ("\n");
+}
+&fasta2embl; 
+print ("${fastafile}.embl created.\n");
+print "Finished.\n";
+
+# SUBROUTINES
+
+sub cleanup_overlap {           #remove leading spaces and empty lines
+    open(CLEANUPFILE, "$overlapfile");
+    open(CLEANFILE, ">>${overlapfile}.tmp");
+    while ($overlapfile =~ /^-/) {
+        $_ = shift;
+      last if /^--/;
+        if (/^-n/) {
+	    $nflag++;
+	    next;
+        }
+        die "I don't recognize this switch: $_\\n";
+    }
+    $printit++ unless $nflag;
+
+    $\ = "\n";		# automatically add newline on print
+
+    LINE:
+    while (<CLEANUPFILE>) {
+        chop;
+        if (/^[ \t,]*$/) {
+            $printit = 0;
+            next LINE;
+        }
+        s/^[ \t,]*//; 
+}
+continue {
+    if ($printit)
+	{ print CLEANFILE; }
+    else
+	{ $printit++ unless $nflag; }
+    }
+    close(CLEANFILE);
+}
+
+sub printhelp {             #print help text
+        print "\nCONTIG BUILDER reads data from an input file in which each line has\nthree fields (empty lines are allowed):\n\n            ACCESSION# BEGINLOCATION ENDLOCATION\n\nFields may be separated by one or several TABS, spaces or commas.\nThe BEGINLOCATION (or END-) is the location of the nucleotide in the\ngenome (segment) to which the first (or last) base in the database entry\nACCESSION# corresponds. CONTIG BUILDER will build a JOIN statement\nin which overlap between consecutive entries has been eliminated.\n\nExample:\nINPUT:\nZ99104   1        213080\nZ99105   194651   415810\nZ99106   402751   611850\n\nOUTPUT:\njoin(Z99104:1..213080,\nZ99105:18431..221160,\nZ99106:13061..209100)\n";
+
+	print "Press RETURN to for more help, any other key to QUIT. ";
+        chop($morehelp=<STDIN>);
+        if ($morehelp eq "") {
+	    system("clear");
+            print "CONTIG BUILDER can also produce a sequence file in FastA format. The programme\neither needs EMBL flatfiles to be present in the working directory, or can\nload these when prompted. The filenames should be 'acno.dat' in lowercase\n(e.g. z12345.dat or aj123456.dat).\n\nIf you want entries to be loaded from Oracle, make sure you work on the\ncorrect machine (i.e. tonic). The FastA header is the organism name given\nin the first part of the programme preceded by >.\n";
+        } else {
+	    die ("\n");
+	}
+}
+
+sub flatfile_2_seqfile {           #strip ID..SQ lines, spaces, // and numbers from flatfile
+    open(FLATFILE, "${acno}.dat") || die ("Could not open input file\n");
+    open(SEQFILE, ">${acno}.tempseq") || die ("Could not create file\n");
+
+    $printit++ unless $nflag;
+
+    LINE:
+    while (<FLATFILE>) {
+        chop;
+        if (/ID   /.../SQ   /) {    #remove ID..SQ lines from flatfile
+            $printit = 0;
+            next LINE;
+        }
+        s/ //g;                     #remove spaces
+        s/[0-9]//g;                 #remove numbers
+        if (/\//) {                 #delete // line
+            $printit = 0;
+            next LINE;
+        }
+    }
+    continue {
+        if ($printit)
+            { print SEQFILE; }
+        else
+           { $printit++ unless $nflag; }
+    }
+    close(FLATFILE);
+    close(SEQFILE);
+}
+
+sub fasta2embl {    #Convert FastA file into EMBL format 
+
+open(FASTASQ,"${fastafile}.fasta");
+open(EMBLHEADER,">${fastafile}.emblH");      #this will contain the EMBL header
+open(EMBLSEQ,">${fastafile}.emblS");         #this will contain the sequence in EMBL format
+$linecount = 1;
+$totalnucleotide = 0;
+@chars = ("a","c","g","t");
+while ($seqline = <FASTASQ>) {
+    chop($seqline);
+    $seqline =~ tr/A-Z/a-z/;          #convert to lowercase, just in case
+    $seqline =~ tr/u/t/;              #convert u's to t's
+    $seqline =~ s/^>.*//;             #get rid of FastA header
+    $totalnucleotide += length($seqline); 
+    $_ = $seqline;
+    foreach $char (@chars) {
+        eval ("\$count = tr/$char/$char/;");
+        $count{$char} += $count;
+        }
+    $seqline =~ s/(^.{10})/\1 /;
+    for ($i=10; $i <=43; $i += 10) {
+        $seqline =~ s/( .{$i})/\1 /;
+        ++$i
+        }
+    $stringlength = 66 - length($seqline);    
+    $extraspaces = " " x $stringlength;
+    $baseno = 60*$linecount;
+    if ($baseno < 100) {
+	$spaceno= " " x 7;
+        } elsif ($baseno < 1000) {
+	    $spaceno= " " x 6;
+            } elsif ($baseno < 10000) {
+	        $spaceno= " " x 5;
+                } elsif ($baseno < 100000) {
+	            $spaceno= " " x 4;
+                    } elsif ($baseno < 1000000) {
+	                $spaceno= " " x 3;
+                        } elsif ($baseno < 10000000) {
+	                    $spaceno= " " x 2;
+                            } elsif ($baseno < 100000000) {
+	                        $spaceno= " " x 1;
+                                } elsif ($baseno < 1000000000) {
+	                            $spaceno= "";
+    }
+    unless ($seqline eq "") {
+        print EMBLSEQ "     ",$seqline,$spaceno,$extraspaces,$baseno,"\n";
+        ++$linecount;
+    }
+}
+print EMBLSEQ "//\n";       #add //
+print EMBLHEADER ("SQ   Sequence $totalnucleotide BP; ");
+foreach $char (sort (@chars)) {
+    print EMBLHEADER $count{$char}," ",uc$char,"; ";
+    $othernucleotide += $count{$char};
+}
+print EMBLHEADER $totalnucleotide - $othernucleotide," other;\n";
+close(EMBLHEADER);
+close(EMBLSEQ);
+system("cat ${fastafile}.emblH ${fastafile}.emblS >${fastafile}.embl");
+unlink ("${fastafile}.emblS");
+unlink ("${fastafile}.emblH");
+
+}

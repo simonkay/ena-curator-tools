@@ -1,0 +1,174 @@
+ID   Mitochondrial genome
+ML   DNA
+AU   SB
+ST   Gold Standard
+XX
+CC   The molecular topology must be circular.
+XX
+DE   Rattus norvegicus complete mitochondrial genome
+XX
+KW   12S rRNA gene; 12S ribosomal RNA; 16S rRNA gene; 16S ribosomal RNA; 
+KW   ATPase 6 gene; ATPase subunit 6; ATPase 8 gene; ATPase subunit 8;
+KW   COI gene; complete genome; control region; cytochrome oxidase subunit I;
+KW   COII gene;  cytochrome oxidase subunit II; COIII gene; 
+KW   cytochrome oxidase subunit III; cytb gene; cytochrome b; D-loop;
+KW   NADH1 gene; NADH dehydrogenase subunit 1; NADH2 gene; 
+KW   NADH dehydrogenase subunit 2; NADH3 gene; 
+KW   NADH dehydrogenase subunit 3; NADH4 gene; 
+KW   NADH dehydrogenase subunit 4; NADH4L gene;
+KW   NADH dehydrogenase subunit 4L; NADH5 gene; 
+KW   NADH dehydrogenase subunit 5; NADH6 gene;
+KW   NADH dehydrogenase subunit 6; tRNA-Ala gene; 
+KW   transfer RNA-Ala; tRNA-Arg gene; transfer RNA-Arg; 
+KW   tRNA-Asn gene; transfer RNA-Asn; tRNA-Asp gene; transfer RNA-Asp;
+KW   tRNA-Cys gene; transfer RNA-Cys; tRNA-Gln gene; transfer RNA-Gln; 
+KW   tRNA-Glu gene; transfer RNA-Glu; tRNA-Gly gene; transfer RNA-Gly;
+KW   tRNA-His gene; transfer RNA-His; tRNA-Ile gene; transfer RNA-Ile; 
+KW   tRNA-Leu(CUN) gene; transfer RNA-Leu(CUN); tRNA-Leu(UUR) gene; 
+KW   transfer RNA-Leu(UUR); tRNA-Lys gene; transfer RNA-Lys; tRNA-Met gene;  
+KW   transfer RNA-Met; tRNA-Phe gene; transfer RNA-Phe; tRNA-Pro gene;
+KW   transfer RNA-Pro; tRNA-Ser(AGY) gene; transfer RNA-Ser(AGY);
+KW   tRNA-Ser(UCN) gene; transfer RNA-Ser(UCN); tRNA-Thr gene; 
+KW   transfer RNA-Thr; tRNA-Trp gene; transfer RNA-Trp; tRNA-Tyr gene;
+KW   transfer RNA-Tyr; tRNA-Val gene; transfer RNA-Val.
+XX
+CC   add codon use between brackets to tRNA genes only when there are
+CC   duplicate genes or when provided by the submitter
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..16405
+FT                   /organism="Rattus norvegicus"
+FT                   /mol_type="genomic DNA"
+FT                   /organelle="mitochondrion"
+FT   tRNA            1..71
+FT                   /gene="tRNA-Phe
+FT                   /product="transfer RNA-Phe"
+FT   rRNA            72..1039
+FT                   /gene="12S rRNA"
+FT                   /product="12S ribosomal RNA"
+FT   tRNA            1040..1108
+FT                   /gene="tRNA-Val"
+FT                   /product="transfer RNA-Val"
+FT   rRNA            1109..2673
+FT                   /gene="16S rRNA"
+FT                   /product="16S ribosomal RNA"
+FT   tRNA            2674..2747
+FT                   /gene="tRNA-Leu(UUR)"
+FT                   /product="transfer RNA-Leu(UUR)"
+FT   CDS             2750..3706
+FT                   /gene="NADH1"
+FT                   /product="NADH dehydrogenase subunit 1"
+FT   tRNA            3706..3774
+FT                   /gene="tRNA-Ile"
+FT                   /product="transfer RNA-Ile"
+FT   tRNA            complement(3772..3843)
+FT                   /gene="tRNA-Gln"
+FT                   /product="transfer RNA-Gln"
+FT   tRNA            3845..3913
+FT                   /gene="tRNA-Met"
+FT                   /product="transfer RNA-Met"
+FT   CDS             3914..4957
+FT                   /gene="NADH2"
+FT                   /product="NADH dehydrogenase subunit 2"
+FT   tRNA            4956..5022
+FT                   /gene="tRNA-Trp"
+FT                   /product="transfer RNA-Trp"
+FT   tRNA            complement(5027..5095)
+FT                   /gene="tRNA-Ala"
+FT                   /product="transfer RNA-Ala"
+FT   tRNA            complement(5098..5171)
+FT                   /gene="tRNA-Asn"
+FT                   /product="transfer RNA-Asn"
+FT   rep_origin      5149..5182
+FT                   /direction=LEFT
+FT   tRNA            complement(5204..5271)
+FT                   /gene="tRNA-Cys"
+FT                   /product="transfer RNA-Cys"
+FT   tRNA            complement(5272..5337)
+FT                   /gene="tRNA-Tyr"
+FT                   /product="transfer RNA-Tyr"
+FT   CDS             5339..6883
+FT                   /gene="COI"
+FT                   /product="cytochrome oxidase subunit I"
+FT                   /transl_except=(pos:6883,aa:TERM)
+FT                   /note="TAA stop codon is completed by the addition
+FT                   of 3' A residues to the mRNA"
+FT   tRNA            complement(6888..6956)
+FT                   /gene="tRNA-Ser(UCN)"
+FT                   /product="transfer RNA-Ser(UCN)"
+FT   tRNA            6965..7031
+FT                   /gene="tRNA-Asp"
+FT                   /product="transfer RNA-Asp"
+FT   CDS             7032..7715
+FT                   /gene="COII"
+FT                   /product="cytochrome oxidase subunit II"
+FT   tRNA            7719..7782
+FT                   /gene="tRNA-Lys"
+FT                   /product="transfer RNA-Lys"
+FT   CDS             7784..7990
+FT                   /gene="ATPase 8"
+FT                   /product="ATPase subunit 8"
+FT   CDS             7945..8625
+FT                   /gene="ATPase 6"
+FT                   /product="ATPase subunit 6"
+FT   CDS             8625..9408
+FT                   /gene="COIII"
+FT                   /product="cytochrome oxidase subunit III"
+FT                   /transl_except=(pos:9408,aa:TERM)
+FT                   /note="TAA stop codon is completed by the addition
+FT                   of 3' A residues to the mRNA"
+FT   tRNA            9410..9479
+FT                   /gene="tRNA-Gly"
+FT                   /product="transfer RNA-Gly"
+FT   CDS             9480..9826
+FT                   /gene="NADH3"
+FT                   /product="NADH dehydrogenase subunit 3"
+FT                   /transl_except=(pos:9826,aa:TERM)
+FT                   /note="TAA stop codon is completed by the addition
+FT                   of 3' A residues to the mRNA"
+FT   tRNA            9827..9895
+FT                   /gene="tRNA-Arg"
+FT                   /product="transfer RNA-Arg"
+FT   CDS             9896..10192
+FT                   /gene="NADH4L"
+FT                   /product="NADH dehydrogenase subunit 4L"
+FT   CDS             10186..11562
+FT                   /gene="NADH4"
+FT                   /product="NADH dehydrogenase subunit 4"
+FT                   /transl_except=(pos:11562,aa:TERM)
+FT                   /note="TAA stop codon is completed by the addition
+FT                   of 3' A residues to the mRNA"
+FT   tRNA            11564..11633
+FT                   /gene="tRNA-His"
+FT                   /product="transfer RNA-His"
+FT   tRNA            11634..11692
+FT                   /gene="tRNA-Ser(AGY)"
+FT                   /product="transfer RNA-Ser(AGY)"
+FT   tRNA            11694..11763
+FT                   /gene="tRNA-Leu(CUN)"
+FT                   /product="transfer RNA-Leu(CUN)"
+FT   CDS             11764..13548
+FT                   /gene="NADH5"
+FT                   /product="NADH dehydrogenase subunit 5"
+FT   CDS             complement(13571..14098)
+FT                   /gene="NADH6"
+FT                   /product="NADH dehydrogenase subunit 6"
+FT   tRNA            complement(14099..14167)
+FT                   /gene="tRNA-Glu"
+FT                   /product="transfer RNA-Glu"
+FT   CDS             14172..15311
+FT                   /gene="cytb"
+FT                   /product="cytochrome b"
+FT                   /transl_except=(pos:15311,aa:TERM)
+FT                   /note="TAA stop codon is completed by the addition
+FT                   of 3' A residues to the mRNA"
+FT   tRNA            15312..15381
+FT                   /gene="tRNA-Thr"
+FT                   /product="transfer RNA-Thr"
+FT   tRNA            complement(15381..15447)
+FT                   /gene="tRNA-Pro"
+FT                   /product="transfer RNA-Pro"
+FT   D-loop          15444..16472
+FT   
+

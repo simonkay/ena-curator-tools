@@ -1,0 +1,31 @@
+ID   Ribosomal slippage
+ML   DNA
+AU   RJV
+ST   Gold Standard
+XX
+DE   Streptomyces coelicolor insertion sequence IS101, strain ABCD
+XX
+KW   insertion sequence; TnpA gene; transposase; ribosomal slippage.
+XX
+FT   source          1..1354
+FT                   /organism="Streptomyces coelicolor"
+FT                   /mol_type="genomic DNA"
+FT                   /strain="ABCD"
+FT   repeat_region   1..1354
+FT                   /insertion_seq="IS101"
+FT   repeat_unit     279..290
+FT                   /rpt_type=INVERTED
+FT                   /note="left inverted repeat"
+FT   RBS             355..357
+FT                   /gene="TnpA"
+FT   CDS             join(364..699,708..1307)
+FT                   /translation="MDGRVLKKQQQRPSVHARGKIAAEHQLLVRPEAALLKRREA"
+FT                   /gene="TnpA"
+FT                   /product="transposase"
+FT                   /ribsomal_slippage
+FT   misc_feature    816^817
+FT                   /note="group II intron insertion site"
+FT   repeat_unit     1309..1320
+FT                   /rpt_type=INVERTED
+FT                   /note="right inverted repeat"
+XX

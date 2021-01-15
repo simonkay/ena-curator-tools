@@ -1,0 +1,70 @@
+directories:
+-----------
+setenv $DS /ebi/services/data/embl/dirsub/ds/
+-> currently  for production embl submissions....
+
+scenario:
+--------
+
+mail to datasubs from webin-align(who only forward to curator):
+
+process_align.pl <username/password\@instance> <webin directory> <ds_number>
+
+-> selects a new DS# and creates directory $DS/<DS#> 
+-> copies new webin align files to $DS/<DS#>
+-> loads INFO.TXT file into db
+
+load_align.pl <username/password\@instance> <ds number> [-save]|[-u]
+
+-> checks alignment files
+-> report for curator saved into the DS directory
+-> if option [-save] is selected: - loads alignment files into the database
+                                  - send an email to the submitter
+-> if option [-u] is selected: - update both the .aln and .dat files in the DS
+                                 directory and the .aln and .dat files in 
+                                 the load clob directory 
+                                 from the webin_align directory
+
+check_align.pl <username/password\@instance>
+
+-> checks every days: - Update table ALIGN if hold date expired
+                      - Synchronize table ALIGN_DBENTRY with DBENTRY
+                      - warn a curator if an acc_number is no longer public
+                      - check wich alignments can be published on the ftp site
+		      - remove from the ftp if the entry_status = D
+		      - Change the unpublished statment from Y 
+		        to N if a citation becomes published.  
+-> create into the ftp site: accession number.dat (e.g ALIGN_000001.dat)
+                   clustal-> accession number.aln (e.g ALIGN_000001.aln)
+-> send every day a status mail to datasub
+
+journal_check_align.pl <username/password\@instance>
+
+-> checks every days the citation status
+-> send every 6 months a reminder letter (only 3 reminder letters maximum)
+-> send a letter for an accepted, unpublished or no plans to publish citation
+
+curator can use an unloading program
+
+unload_align.pl <username/password\@instance> <accession number> [-clustal]
+
+-> unload an entry given an accession number (even if it's a confidential one)
+-> save the flatfile into the current directory (e.g ALIGN_000001.dat)  
+-> if option [-clustal] is selected: save the clustal format into the current
+                                     directory (e.g ALIGN_000001.aln)
+
+whodidit_align.pl <username/password\@instance> <alignacc#>
+
+-> view the revision history of an accession number. It displays:
+   date, #ds, table, user, action, audit remark for each modification
+
+stat_align.pl <username/password\@instance> [-d year]
+
+-> dislpays the number of : - all alignments, 
+			    - all protein alignments, 
+			    - all DNA alignments,
+                            - all confidential alignments, 
+			    - confidential DNA alignments, 
+			    - confidential protein alignments,
+			    - deleted alignments.
+for cumulative years or for a specific year (using the optional -d flag)

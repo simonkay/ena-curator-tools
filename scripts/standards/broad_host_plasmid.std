@@ -1,0 +1,52 @@
+ID   Broad host range plasmid
+ML   DNA
+AU   NJA
+ST   Gold Standard
+XX
+CC   Synthetic plasmids should be annotated as cloning vectors.
+XX
+DE   Plasmid RP4 origin of transfer region, oriT
+XX
+CC   If the entire plasmid is represented in the entry, then the molecule
+CC   topology must be circular.  If the sequence is not entire, then the
+CC   topology should be linear.
+CE   Webin does not allow a base-span of 467^468 to be entered, so for the 
+CE   oriT nick site please enter a base span like 467..468 and provide
+CE   guidance to the curator.
+XX
+KW   origin of transfer; oriT; traJ gene; traK gene.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..1131
+FT                   /organism="Plasmid RP4"
+FT                   /mol_type="genomic DNA"
+FT                   /plasmid="RP4"
+FT                   /lab_host="Escherichia coli"
+FT                   /note="IncPalpha plasmid"
+FT   CDS             complement(1..371)
+FT                   /transl_table=11
+FT                   /gene="traJ"
+FT                   /product="TraJ protein"
+FT                   /function="oriT-binding protein"
+FT                   /translation="MADETKPTRKGSPPIKVYCLPDERRAIEEKAAAAGMSLS
+FT                   AYLLAVGQGYKITGVVDYEHVRELARINGDLGRLGGLLKLWLTDDPRTARFGD
+FT                   ATILALLAKIEEKQDELGKVMMGVVRPRAEP"
+FT   oriT            429..528
+FT                   /bound_moiety="TraJ protein"
+FT                   /rpt_unit_range=476..494
+FT                   /rpt_unit_range=481..485
+FT                   /rpt_unit_range=486..490
+FT                   /rpt_unit_range=497..515
+FT                   /rpt_type=INVERTED
+FT   misc_feature    467^468
+FT                   /note="oriT nick site"
+FT   CDS             727..1131
+FT                   /transl_table=11
+FT                   /gene="traK"
+FT                   /product="TraK protein"
+FT                   /function="oriT-binding protein"
+FT                   /translation="MPKSYTDELAEWVESRAAKKRRRDEAAVAFLAVRADVE
+FT                   AALASGYALVTIWEHMRETGKVKFSYETFRSHARRHIKAKPADVPAPQAKAA
+FT                   EPAPAPKTPEPRRPKQGGKAEKPAPAAAPTGFTFNPTPDKKDLL"
+XX

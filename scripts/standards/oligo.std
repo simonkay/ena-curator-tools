@@ -1,0 +1,23 @@
+ID   Oligonucleotide primer artifical sequence
+ML   DNA
+AU   PH
+ST   Gold Standard
+XX
+DE   Artificial oligonucleotide primer sequence (AOS-2F) for HIV
+DE   RT-PCR analysis
+XX
+KW   oligonucleotide; primer.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..20
+FT                   /organism="synthetic construct"
+FT                   /mol_type="other DNA"
+XX
+CC   The /organism field must contain "synthetic construct", not the name of 
+CC   the organism being studied.  
+XX
+FT   misc_feature    1..20
+FT                   /note="AOS-2F primer for HIV RT-PCR analysis"
+XX
+

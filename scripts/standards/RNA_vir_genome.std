@@ -1,0 +1,31 @@
+ID   Complete RNA virus segment
+ML   RNA
+AU   PB
+ST   Preliminary
+XX
+DE   Influenza A virus (A/swine/Cotes d'Armor/800/00(H1N2)) segment 4,
+DE   complete sequence, genomic RNA
+XX
+CC   In RNA viruses, for example Influenzaviruses, where the segment is
+CC   complete the molecule type in the ID line should be RNA.
+XX
+KW   HA1; HA2; haemagglutinin.
+XX
+CC   Do not add complete genome to the DE line or keywords.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..1779
+FT                   /organism="Influenza A virus (A/swine/Cotes
+FT                   d'Armor/800/00(H1N2))"
+FT                   /strain="A/swine/Cotes d'Armor/800/00(H1N2)"
+FT                   /segment="4"
+FT                   /mol_type="genomic RNA"
+FT                   /virion
+FT   CDS             33..1733
+FT                   /product="haemagglutinin precursor"
+FT   sig_peptide     33..83
+FT   mat_peptide     84..1058
+FT                   /product="haemagglutinin HA1 chain"
+FT   mat_peptide     1062..1730
+FT                   /product="haemagglutinin HA2 chain" 

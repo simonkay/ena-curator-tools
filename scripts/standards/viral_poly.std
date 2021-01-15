@@ -1,0 +1,47 @@
+ID   Viral polyprotein
+ML   RNA
+AU   AT
+ST   Gold Standard
+XX    
+DE   Porcine enterovirus 1 gene for polyprotein, genomic RNA
+XX
+KW   polyprotein; L protein; VP4 protein; VP2 protein; 
+KW   VP3 protein; VP1 protein; 2A protein; 2B protein; 
+KW   2C protein; 3A protein; 3B protein; 3C protein;
+KW   3D protein.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..8050
+FT                   /organism="porcine enterovirus 1"
+FT                   /mol_type="genomic RNA"
+FT                   /serotype="Y"
+FT                   /isolate="ABC"
+FT                   /virion
+FT   CDS             200..8000
+FT                   /product="polyprotein"
+FT   mat_peptide     200..600
+FT                   /product="L protein"
+FT   mat_peptide     601..900
+FT                   /product="VP4 protein"
+FT   mat_peptide     901..1700
+FT                   /product="VP2 protein"
+FT   mat_peptide     1701..2470
+FT                   /product="VP3 protein"
+FT   mat_peptide     2471..3200
+FT                   /product="VP1 protein"
+FT   mat_peptide     3201..3300
+FT                   /product="2A protein"
+FT   mat_peptide     3301..3700
+FT                   /product="2B protein"
+FT   mat_peptide     3701..4700
+FT                   /product="2C protein"
+FT   mat_peptide     4701..5000
+FT                   /product="3A protein"
+FT   mat_peptide     5001..6000
+FT                   /product="3B protein"
+FT   mat_peptide     6001..7000
+FT                   /product="3C protein"
+FT   mat_peptide     7001..7997
+FT                   /product="3D protein"
+XX

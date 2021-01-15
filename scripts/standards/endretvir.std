@@ -1,0 +1,46 @@
+ID   Endogenous retrovirus
+ML   DNA
+AU   NJA
+ST   Gold Standard
+XX
+CC   Please note that the following is a particularly good example of a
+CC   complete endogenous retrovirus, however, these elements are likely to
+CC   have gone through a great deal of genomic rearrangments
+CC   and recombinations during their evolution and it is therefore likely
+CC   that most sequences submitted will not be so comprehensive and may be
+CC   as limited as just a single LTR sequence.
+XX
+DE   Gorilla endogenous retrovirus complete proviral genome, clone
+DE   ERV-Fc1
+XX
+CC   The DE line and the /organism qualifier are deliberately mismatched to
+CC   allow an accurate DE line description of the origin of this sequence
+CC   whilst at the same time permitting a legal taxonomy. Use of this
+CC   annotation avoids the necessity for multiple source features.
+XX
+KW   complete proviral genome; env pseudogene; gag/pol pseudogene;
+KW   long terminal repeat; LTR.
+XX
+FH   Key             Location/Qualifiers
+FH   
+FT   source          1..7998
+FT                   /db_xref="taxon:9593"
+FT                   /mol_type="genomic DNA"
+FT                   /note="Gorilla endogenous retrovirus"
+FT                   /proviral
+FT                   /organism="Gorilla gorilla"
+FT                   /tissue_type="primary fibroblasts"
+FT                   /clone="ERV-Fc1"
+FT   LTR             1..374
+FT   primer_bind     376..393
+FT                   /note="tRNA-Phe"
+FT   CDS             685..5904
+FT                   /gene="gag/pol"
+FT                   /pseudo
+FT   CDS             5837..7592
+FT                   /gene="env"
+FT                   /pseudo
+FT   LTR             7630..7998
+
+
+

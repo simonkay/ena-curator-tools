@@ -1,0 +1,97 @@
+ID   Gap of unknown length
+ML   DNA
+AU   GRC
+ST   Gold standard
+XX
+CC   A gap of unknown length can be used in cases where the sequence in question
+CC   is known to be contiguous, but complete sequence is not available over the
+CC   entire range. The joining of sequences using gap features of unknown length
+CC   should be reserved for those cases where either (a) there is an intention
+CC   to determine completely the sequence of the gap or (b) one or more features
+CC   are described that span the gap.
+XX
+DE   Homo sapiens partial HLA-A gene for MHC class I antigen, exons 1-3,
+DE   HLA-A*6802 allele
+XX
+KW   HLA-A gene; HLA-A*6802 allele; human leucocyte antigen A; major
+KW   histocompatibility complex; MHC class I antigen.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..1202
+FT                   /chromosome="6"
+FT                   /country="Italy"
+FT                   /db_xref="taxon:9606"
+FT                   /mol_type="genomic DNA"
+FT                   /organism="Homo sapiens"
+FT                   /map="6p21"
+FT                   /tissue_type="peripheral blood"
+FT   mRNA            join(<1..80,181..450,551..826,927..>1202)
+FT                   /gene="HLA-A"
+FT                   /allele="HLA-A*6802"
+FT   CDS             join(8..80,181..450,551..826,927..>1202)
+FT                   /gene="HLA-A"
+FT                   /allele="HLA-A*6802"
+FT                   /product="MHC class I antigen"
+FT                   /function="antigen presenting molecule"
+FT                   /translation="MAVMAPRTLVLLLSGALALTQTWAGSHSMRYFYTSMSRPGRGEPR
+FT                   FIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDRNTRNVKAQSQTDRVDLGT
+FT                   LRGYYNQSEAGSHTIQRMYGCDVGPDGRFLRGYHQYAYDGKDYIALKEDLRSWTAADMA
+FT                   AQTTKHKWEAAHVAEQWRAYLEGTCVEWLRRYLENGKETLQRTDAPKTHMTHHAVSDHE
+FT                   ATLRCWALSFYPAEITLTWQRDGEDQTQDTELVETRPAGDGTFQKWVAVVVPSGQEQRY
+FT                   TCHVQHEGLPKPLTLRW"
+XX
+CC   Care should be taken when annotating features that span gaps of unknown
+CC   length. CDS features should not normally include any part of a gap.
+XX
+FT   exon            <1..80
+FT                   /number=1
+FT                   /gene="HLA-A"
+FT                   /allele="HLA-A*6802"
+FT   gap             81..180
+FT                   /estimated_length=unknown
+XX
+CC   Note that the gap length should be 100 and a string of 100 N's should
+CC   appear in the corresponding sequence. The /estimated_length qualifier with
+CC   value 'unknown' is mandatory for this type of gap feature.
+XX
+FT   exon            181..450
+FT                   /number=2
+FT                   /gene="HLA-A"
+FT                   /allele="HLA-A*6802"
+FT   gap             451..550
+FT                   /estimated_length=unknown
+FT   exon            551..826
+FT                   /number=3
+FT                   /gene="HLA-A"
+FT                   /allele="HLA-A*6802"
+FT   gap             827..926
+FT                   /estimated_length=unknown
+FT   exon            927..1202
+FT                   /number=4
+FT                   /gene="HLA-A"
+FT                   /allele="HLA-A*6802"
+XX
+SQ   Sequence 1202 BP;
+     tctcccgatg gccgtcatgg cgccccgaac cctcgtcctg ctactctcgg gggccctggc       60
+     cctgacccag acctgggcgg nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn      120
+     nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn      180
+     gctcccactc catgaggtat ttctacacct ccatgtcccg gcccggccgc ggggagcccc      240
+     gcttcatcgc cgtgggctac gtggacgaca cgcagttcgt gcggttcgac agcgacgccg      300
+     cgagccagag gatggagccg cgggcgccgt ggatagagca ggaggggccg gagtattggg      360
+     accggaacac acggaatgtg aaggcccagt cacagactga ccgagtggac ctggggaccc      420
+     tgcgcggcta ctacaaccag agcgaggccg nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn      480
+     nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn      540
+     nnnnnnnnnn gttctcacac catccagagg atgtatggct gcgacgtggg gccggacggg      600
+     cgcttcctcc gcgggtacca ccagtacgcc tacgacggca aggattacat cgccctgaaa      660
+     gaggacctgc gctcttggac cgcggcggac atggcagctc agaccaccaa gcacaagtgg      720
+     gaggcggccc atgtggcgga gcagtggaga gcctacctgg agggcacgtg cgtggagtgg      780
+     ctccgcagat acctggagaa cgggaaggag acgctgcagc gcacggnnnn nnnnnnnnnn      840
+     nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn      900
+     nnnnnnnnnn nnnnnnnnnn nnnnnnacgc ccccaaaacg catatgactc accacgctgt      960
+     ctctgaccat gaagccaccc tgaggtgctg ggccctgagc ttctaccctg cggagatcac     1020
+     actgacctgg cagcgggatg gggaggacca gacccaggac acggagctcg tggagaccag     1080
+     gcctgcaggg gatggaacct tccagaagtg ggtggctgtg gtggtgcctt ctggacagga     1140
+     gcagagatac acctgccatg tgcagcatga gggtttgccc aagcccctca ccctgagatg     1200
+     gg                                                                    1202
+//

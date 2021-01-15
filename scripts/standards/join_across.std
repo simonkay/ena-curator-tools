@@ -1,0 +1,98 @@
+ID   Joined CDS across entries
+ML   DNA
+AU   DH
+ST   Preliminary
+XX
+AC   accno1;
+XX
+DE   Arpophyllum giganteum chloroplast efg gene for chlorophyll 
+DE   a-binding protein, exon 1 and joined CDS
+XX
+CC   ** Gap of unknown length should be used in preference to joined CDS **
+XX
+CC   CDS and mRNA features should be included in the entry with the most 5'
+CC   coding exon.
+CE   to include a joined CDS or mRNA feature within your submission, please
+CE   add a note to entry with the most 5' coding exon giving locations for
+CE   the exons in each of the other submissions
+XX
+KW   chlorophyll a-binding protein; phosphoprotein; photosystem II; efg gene.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..1234
+FT                   /organism="Arpophyllum giganteum
+FT                   /mol_type="genomic DNA"
+FT                   /strain="pink lady"
+FT                   /organelle="plastid:chloroplast"
+FT   5'UTR           1..23
+FT                   gene="egf"
+FT   mRNA            join(1..704,accno2:250..1678,accno3:12..948)
+FT                   /label=efg_mRNA
+FT   CDS             join(23..704,accno2:250..1678,accno3:12..925)
+FT                   /label=efg_cds
+FT                   /gene="efg"
+FT                   /product="chlorophyll a-binding protein"
+FT   exon            1..704
+FT                   /number=1
+FT                   /gene="efg"
+FT   intron          705..>1234
+FT                   /number=1
+FT                   /gene="efg"
+
+--------------------------------------------------------------------
+AC   accno2;
+XX
+DE   Arpophyllum giganteum chloroplast efg gene for chlorophyll 
+DE   a-binding protein, exon 2
+XX
+KW   chlorophyll a-binding protein; phosphoprotein; photosystem II; efg gene.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..1804
+FT                   /organism="Arpophyllum giganteum"
+FT                   /mol_type="genomic DNA"
+FT                   /strain="pink lady"  
+FT                   /organelle="plastid:chloroplast"
+FT   intron          <1..249
+FT                   /number=1
+FT                   /gene="efg"
+FT   exon            250..1678
+FT                   /number=2
+FT                   /gene="efg"
+FT                   /usedin=accno1:efg_mRNA
+FT                   /usedin=accno1:efg_CDS   
+FT   intron          1678..>1804
+FT                   /number=2
+FT                   /gene="efg"
+
+-------------------------------------------------------------------- 
+AC  accno3;
+XX
+DE   Arpophyllum giganteum chloroplast efg gene for chlorophyll 
+DE   a-binding protein, exon 3
+XX
+KW   chlorophyll a-binding protein; phosphoprotein; photosystem II; efg gene.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..1894
+FT                   /organism="Arpophyllum giganteum"
+FT                   /mol_type="genomic DNA"
+FT                   /strain="pink lady"  
+FT                   /organelle="plastid:chloroplast"
+FT   intron          <1..11
+FT                   /number=2
+FT                   /gene="efg"
+FT   exon            12..948
+FT                   /number=3
+FT                   /gene="efg"
+FT                   /usedin=accno1:efg_mRNA
+FT                   /usedin=accno1:efg_CDS
+
+
+
+
+
+

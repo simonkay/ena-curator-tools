@@ -1,0 +1,37 @@
+ID   Synthetic construct
+ML   DNA
+AU   HEP
+ST   Gold Standard
+XX
+CC   Synthetic plasmids should be annotated as cloning vectors.  Note that
+CC   /mol_type must be included on all source features, and must be the same
+CC   in all cases.
+XX
+DE   Synthetic construct for chimaeric Drosophila melanogaster and Drosophila 
+DE   pseudoobscura partial per gene
+XX
+KW   per gene; period protein.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..777
+FT                   /organism="synthetic construct"
+FT                   /mol_type="other DNA"
+FT                   /focus
+FT   source          1..21
+FT                   /organism="Drosophila melanogaster"
+FT                   /strain="Canton S"
+FT                   /mol_type="other DNA"
+FT                   /chromosome="X"
+FT   source          22..290
+FT                   /organism="Drosophila pseudoobscura"
+FT                   /strain="Ayala"   
+FT                   /mol_type="other DNA"
+FT                   /chromosome="X"
+FT   CDS             1..>290
+FT                   /gene="per"
+FT                   /product="period protein"
+XX
+CC   Addition information about the synthetic CDS should be included in a /note
+CC   if supplied.
+XX

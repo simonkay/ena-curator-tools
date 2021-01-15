@@ -1,0 +1,19 @@
+DBD::Oracle::db prepare failed: ORA-00942: table or view does not exist (DBD ERROR: error possibly near <*> indicator at char 65 in '
+  SELECT * FROM (SELECT bases, organism
+                   FROM <*>db_statistics_top_organisms
+                 ORDER BY bases DESC)
+  WHERE rownum < 11 ') [for Statement "
+  SELECT * FROM (SELECT bases, organism
+                   FROM db_statistics_top_organisms
+                 ORDER BY bases DESC)
+  WHERE rownum < 11 "] at /ebi/production/seqdb/embl/tools/web_stats/embl_total.pl line 661.
+DBD::Oracle::db prepare failed: ORA-00942: table or view does not exist (DBD ERROR: error possibly near <*> indicator at char 65 in '
+  SELECT * FROM (SELECT bases, organism
+                   FROM <*>db_statistics_top_organisms
+                 ORDER BY bases DESC)
+  WHERE rownum < 11 ') [for Statement "
+  SELECT * FROM (SELECT bases, organism
+                   FROM db_statistics_top_organisms
+                 ORDER BY bases DESC)
+  WHERE rownum < 11 "] at /ebi/production/seqdb/embl/tools/web_stats/embl_total.pl line 661.
+Issuing rollback() for database handle being DESTROY'd without explicit disconnect().

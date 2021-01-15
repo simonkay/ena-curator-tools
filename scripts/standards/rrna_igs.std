@@ -1,0 +1,26 @@
+ID   17S rRNA and IGS
+ML   DNA
+AU   RJV
+ST   Gold Standard
+XX
+DE   Homo sapiens partial 17S rRNA gene, IGS and partial 25S rRNA gene,
+DE   isolate 23758 
+XX
+KW   17S rRNA gene; 25S rRNA gene; 17S ribosomal RNA; 25S ribosomal RNA;
+KW   intergenic spacer; IGS.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..1865
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="genomic DNA"
+FT                   /isolate="23758"
+FT   rRNA            <1..48
+FT                   /gene="17S rRNA"
+FT                   /product="17S ribosomal RNA"
+FT   misc_feature    49..1829
+FT                   /note="intergenic spacer, IGS"
+FT   rRNA            1830..>1865
+FT                   /gene="25S rRNA"
+FT                   /product="25S ribosomal RNA"
+

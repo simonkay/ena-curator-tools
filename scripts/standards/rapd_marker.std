@@ -1,0 +1,23 @@
+ID   RAPD marker
+ML   DNA
+AU   Maria Pilar Garcia-Pastor
+ST   Gold Standard
+XX
+DE   Secale cereale RAPD fragment OPC10
+XX
+CC   For submissions of sequence characterized amplified region (SCAR) markers,
+CC   RAPD should be replaced throughout with SCAR-RAPD.  AFLP (amplified
+CC   fragment length polymorphism) and RFLP (restriction fragment length
+CC   polymorphism) markers should also be annotated according to this standard
+CC   and replacing RAPD with the appropriate abbreviation.
+XX
+KW   random amplified polymorphic genomic marker; RAPD; OPC10.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..1012
+FT                   /organism="Secale cereale"
+FT                   /mol_type="genomic DNA"
+FT                   /cultivar="Imperial"
+FT   misc_feature    1..1012
+FT                   /note="RAPD fragment OPC10"

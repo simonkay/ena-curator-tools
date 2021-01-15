@@ -1,0 +1,55 @@
+ID   Coding region (CDS)
+ML   DNA
+AU   RJV
+ST   Gold Standard
+XX
+DE   Mus musculus Ubc42 gene for ubiquitin conjugating enzyme
+XX
+CC   The protein name in the /product qualifier and the DE line must be
+CC   identical.  Exon numbers should only be included in the DE line if the CDS
+CC   is partial.
+XX
+KW   Ubc42 gene; ubiquitin conjugating enzyme.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..1509
+FT                   /organism="Mus musculus"
+FT                   /mol_type="genomic DNA"
+FT                   /strain="CD1"
+FT   promoter        <1..9
+FT                   /gene="Ubc42"
+FT   mRNA            join(10..567,789..1320)
+FT                   /gene="Ubc42"
+FT   CDS             join(54..567,789..1254)
+FT                   /gene="Ubc42"
+FT                   /product="ubiquitin conjugating enzyme"
+XX
+CC   Gene and protein synonyms should be entered in additional /gene or /product
+CC   qualifiers.
+XX
+FT                   /function="cell division control"
+FT                   /translation="MVSSFLLAEYKNLIVNPSEHFKISVNEDNLTEGPPDTLY
+FT                   QKIDTVLLSVISLLNEPNPDSPANVDAAKSYRKYLYKEDLESYPMEKSLDECS
+FT                   AEDIEYFKNVPVNVLPVPSDDYEDEEMEDGTYILTYDDEDEEEDEEMDDE"
+FT   exon            10..567
+FT                   /gene="Ubc42"
+FT                   /number=1
+FT   intron          568..788
+FT                   /gene="Ubc42"
+FT                   /number=1
+FT   exon            789..1320
+FT                   /gene="Ubc42"
+FT                   /number=2
+FT   polyA_signal    1310..1317
+FT                   /gene="Ubc42"
+
+
+
+
+
+
+
+
+
+

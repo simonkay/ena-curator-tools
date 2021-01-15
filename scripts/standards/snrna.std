@@ -1,0 +1,17 @@
+ID   Small nucleolar RNA
+ML   RNA
+AU   RJV
+ST   Gold standard
+XX
+DE   Homo sapiens U23 snoRNA gene
+XX
+KW   U23 snoRNA gene; U23 small nucleolar RNA.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1__137
+FT                   /organism="Homo sapiens"
+FT   snRNA           1__137
+FT                   /gene="U23 snoRNA"
+FT                   /product="U23 small nucleolar RNA"
+

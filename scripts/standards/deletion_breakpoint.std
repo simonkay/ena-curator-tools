@@ -1,0 +1,46 @@
+ID   Deletion breakpoint
+ML   DNA
+AU   PB
+ST   Gold Standard
+XX
+DE   Homo sapiens deletion breakpoint region in Duchenne muscular dystrophy, 
+DE   junction 1
+XX
+CC   Include the associated phenotype in the DE and KW lines if provided. If no
+CC   phenotype is  given, include the gene name in the DE line. Use the term
+CC   'junction #' to individualise deletion breakpoints. 
+XX 
+KW   deletion breakpoint; dystrophin gene.
+XX
+XX
+FH   Key             Location/Qualifiers
+FH   
+FT   source          1..100
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="genomic DNA"
+FT                   /chromosome="X"
+FT                   /map="Xp21"
+XX
+CC   The source feature should include the map location of the deletion
+CC   breakpoint.
+XX
+FT   intron          <1..>50
+FT                   /gene="dystrophin"
+FT                   /number=47
+FT   variation       50^51
+FT                   /note="deletion breakpoint"
+FT                   /note="junction 1"  
+FT                   /phenotype="Duchenne muscular dystrophy"
+FT   intron          <51..>100
+FT                   /gene="dystrophin"
+FT                   /number=49
+
+
+
+
+
+
+
+
+
+

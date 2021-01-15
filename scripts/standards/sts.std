@@ -1,0 +1,29 @@
+ID   Sequence tagged site (STS)
+ML   DNA
+AU   RJV
+ST   Gold Standard
+XX
+CC   Remember to change UNA to STS in the ID line.
+XX
+DE   Homo sapiens STS GNT-12
+XX
+KW   STS; sequence tagged site.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..275
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="genomic DNA"
+FT                   /chromosome="11"
+FT                   /map="11p15.5"
+FT   STS             1..275
+FT                   /standard_name="GNT-12"
+FT                   /note="STS PCR product (GNT-12L + GNT-12R primers)
+FT                   is 275 bp"
+FT   primer_bind     1..18
+FT                   /note="STS primer GNT-12R"
+FT                   /PCR_conditions="annealing: 65 deg C"
+FT   primer_bind     complement(257..275)
+FT                   /note="STS primer GNT-12L"
+FT                   /PCR_conditions="annealing: 65 deg C"
+XX

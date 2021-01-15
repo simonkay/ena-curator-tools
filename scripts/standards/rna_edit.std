@@ -1,0 +1,60 @@
+ID   RNA editing
+ML   DNA
+AU   RJV
+ST   Gold Standard
+XX
+DE   Hordeum vulgare chloroplast ndhB gene for nicotine dehydrogenase,
+DE   exons 1 and 2
+XX
+KW   ndhB gene; RNA editing; nicotine dehydrogenase.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..2245
+FT                   /organism="Hordeum vulgare"
+FT                   /mol_type="genomic DNA"
+FT                   /organelle="plastid:chloroplast"
+FT   CDS             join(1..777,1490..2245)
+FT                   /gene="ndhB"
+FT                   /product="nicotine dehydrogenase"
+FT                   /exception="RNA editing"
+FT                   /translation="MIWHVQNENFILDSTRIFMKAFHLLLFNGSFIFPEC
+FT                   LLLMIDLTSDQKDRPWSPTPVVAFLSVTSKVAALALATRILDIPFYFSSN
+FT                   IKLLMTGRNQEITPYVRNYRRSPLRSNNSIELSMTVCVIASTILGISMNP
+FT                   ILAIAQDTLF"
+XX
+CC   The presence of /exception means that the translation in the flat file is
+CC   stored in the database instead of the conceptual translation.  The flat
+CC   file which is loaded must contain the translation that results from the
+CC   RNA editing, which must be provided by the submitter. 
+XX
+FT   exon            1..777
+FT                   /number=1
+FT                   /gene="ndhB"
+FT   intron          778..1489
+FT                   /number=1
+FT                   /gene="ndhB"
+FT   exon            1490..2245
+FT                   /number=2
+FT                   /gene="ndhB"
+FT   misc_feature    149
+FT                   /note="C to U RNA editing"
+FT   misc_feature    467
+FT                   /note="C to U RNA editing"
+FT   misc_feature    586
+FT                   /note="C to U RNA editing"
+FT   misc_feature    611
+FT                   /note="C to U RNA editing"
+FT   misc_feature    704
+FT                   /note="C to U RNA editing"
+FT   misc_feature    737
+FT                   /note="C to U RNA editing"
+FT   misc_feature    1542
+FT                   /note="C to U RNA editing"
+FT   misc_feature    1548
+FT                   /note="C to U RNA editing"
+FT   misc_feature    2193
+FT                   /note="C to U RNA editing"
+XX
+
+

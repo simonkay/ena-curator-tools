@@ -1,0 +1,32 @@
+ID   Transgene
+ML   DNA
+AU   RJV
+ST   Gold Standard
+XX
+CC   Remember to change UNA to SYN in the ID line
+XX
+DE   Pseudomonas fluorescens bphK transgene for glutathione S-transferase
+XX  
+KW   glutathione S-transferase; bph operon; bphK gene; transgene.
+XX   
+FH   Key             Location/Qualifiers
+FH   
+FT   source          1..612
+FT                   /organism="Pseudomonas fluorescens"
+FT                   /strain="F113PCB"
+FT                   /mol_type="genomic DNA"
+FT                   /transgenic
+CC
+CC   /transgenic should be applied to the source feature for the organism which
+CC   was the recipient of the transgene.  This source feature should span
+CC   the entire sequence length
+CC
+FT   source          1..612
+FT                   /organism="Burkholderia sp. LB400"
+FT                   /mol_type="genomic DNA"
+FT   CDS             1..612
+FT                   /gene="bphK"
+FT                   /note="transgene"
+FT                   /product="glutathione S-transferase"
+FT                   /EC_number="2.5.1.18"
+FT                   /evidence=experimental

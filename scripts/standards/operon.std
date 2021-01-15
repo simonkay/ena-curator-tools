@@ -1,0 +1,48 @@
+ID   Bacterial operon
+ML   DNA
+AU   MAT
+ST   Gold Standard
+XX
+DE   Lactococcus sp. MG1234 galactose operon (galAMK genes)
+XX
+KW   gal operon; galA gene; galM gene; aldpse 1-epimerase;
+KW   galK gene; galactokinase;
+XX
+CC   Every /operon qualifier must also exist as an /operon qualifier on an 
+CC   Operon feature. 
+CC   Any non-operon feature (for example, CDS) with an /operon qualifier must 
+CC   fall within the span of an Operon feature that has a *matching* /operon 
+CC   qualifier.
+CC   Not all features within the Operon feature locations have to have /operon 
+CC   i.e. not all features which lie within the spans of an operon are part of 
+CC   that operon.
+XX
+FT   source             1..9430
+FT                      /organism="Lactococcus sp."
+FT                      /strain="MG1234"
+FT                      /mol_type="genomic DNA"
+FT   operon             160..6865
+FT                      /operon="gal"
+FT   -35_signal         160..165
+FT                      /operon="gal"
+FT   -10_signal         179..184
+FT                      /operon="gal"
+FT   CDS                405..1934
+FT                      /operon="gal"
+FT                      /gene="galA"
+FT                      /product="galactose permease"
+FT                      /function="galactose transporter"
+FT   CDS                2003..3001
+FT                      /operon="gal"
+FT                      /gene="galM"
+FT                      /product="aldose 1-epimerase"
+FT                      /EC_number="5.1.3.3"
+FT                      /function="mutarotase"
+FT   CDS                3235..4537
+FT                      /operon="gal"
+FT                      /gene="galK"
+FT                      /product="galactokinase"
+FT                      /EC_number="2.7.1.6"
+FT   mRNA               189..6865
+FT                      /operon="gal"
+XX

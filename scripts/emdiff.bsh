@@ -1,0 +1,32 @@
+#!/bin/bash
+#  $Header: /ebi/cvs/seqdb/seqdb/tools/curators/scripts/emdiff.bsh,v 1.4 2008/05/08 15:07:12 faruque Exp $
+#
+#  (C) EBI 2005
+#
+#  USAGE: emdiff.csh emblfile1 emblfile2
+#
+#  For each file:-
+#    unwarps long lines (with exceptions)
+#    sorts feature qualifier lines within features
+#    removes translation, dbxref,  transl_table lines
+#
+#  MODIFICATION HISTORY:
+#
+#  07-MAR-2005  Nadeem Faruque     created
+#  20-JUN-2004  Nadeem Faruque     moved to /ebi/services/tools/curators/scripts/unaliased/
+#
+#===============================================================================
+
+if [ $# -ne 2 ]; then
+   echo 1>&2 Usage: $0 emblfile1 emblfile2
+   exit 127
+fi
+
+echo ""
+echo "Making unwrapped and sorted copies of $1 $2"
+echo "NB These will be deleted later"
+/ebi/production/seqdb/embl/tools/curators/scripts/lineUnwrapAndSort.pl -sort -quiet -fts -strip $1 > $1.unwrapped
+/ebi/production/seqdb/embl/tools/curators/scripts/lineUnwrapAndSort.pl -sort -quiet -fts -strip $2 > $2.unwrapped
+/ebi/production/seqdb/embl/tools/curators/bin/tkdiff $1.unwrapped $2.unwrapped
+rm $1.unwrapped 
+rm $2.unwrapped

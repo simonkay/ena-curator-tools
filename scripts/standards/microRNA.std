@@ -1,0 +1,24 @@
+ID   MicroRNA
+ML   RNA
+AU   RJV
+ST   Gold Standard
+XX
+DE   Mus musculus microRNA miR-126
+XX
+KW   miRNA; microRNA miR-126; miR-126 gene.
+XX
+CC   These CC lines are optional, and should only be include at the request of
+CC   the submitter.
+CC   CC    Related sequence: AJ123456
+CC   CC    Related sequence: TI20316581 (Trace Archive)
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..22
+FT                   /organism="Mus musculus"
+FT                   /mol_type="other RNA"
+FT   misc_RNA        1..22
+FT                   /gene="miR-126"
+FT                   /product="microRNA miR-126"
+FT                   /note="transcribed as larger precursor, predicted
+FT                   to form hairpin"

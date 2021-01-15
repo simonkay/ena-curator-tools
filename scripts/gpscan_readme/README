@@ -1,0 +1,35 @@
+In entries.txt there will be a file listing all the entries you have submitted 
+to EMBL-bank.  This file is updated each time new data is submitted to your 
+project and also at 23.30 every Friday night.
+
+Column 1: AC: This is the accession of your entry i.e the EMBL-bank identifier.
+Once the entry has gone public (as defined by the date you entered in the DT 
+field of your entry), the accession will also become available at Genbank (US) 
+and DDBJ (JP) nucleotide sequence databases.
+
+Column 2: AC *: This is the internal identifier you used to identifier your 
+entry.
+
+Column 3: State: This is the status of your entry which can be 'Unfinished' 
+or 'Finished'.
+
+Column 4: First Public: This is the date the entry is first visible to the 
+public.
+
+Column 5: Entry Status: This tells you what the status of your entry is in 
+EMBL-bank. It can be:
+
+	- draft (still being modified)
+
+	- private (complete but not viewable by the public until the 
+          release date is reached)
+
+	- public (viewable by the public)
+
+	- cancelled (the entry will no longer become public)
+
+	- killed (the entry was once public but has been permanently removed, 
+          perhaps because it has been replaced by another identical entry)
+
+	- suppressed (the entry was once public but has been temporarily taken 
+          from public view)

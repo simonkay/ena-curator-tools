@@ -1,0 +1,25 @@
+ID   PCR primer binding sites
+ML   DNA
+AU   RJV
+ST   Gold Standard
+XX
+DE   not dependent on primer_bind feature
+XX
+KW   not dependent on primer_bind feature
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..1295
+FT                   /organism="uncultured alphaproteobacterium"
+FT                   /mol_type="genomic DNA"
+FT                   /clone="alp23"
+FT   primer_bind     1..23
+FT                   /note="PCR 5' primer"
+FT                   /PCR_conditions="annealing temp 65 degrees C"
+
+............................................
+
+FT   primer_bind     complement(1271..1294)
+FT                   /note="PCR 3' primer"
+FT                   /PCR_conditions="annealing temp 65 degrees C"
+XX

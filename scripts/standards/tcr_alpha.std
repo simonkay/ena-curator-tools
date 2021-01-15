@@ -1,0 +1,42 @@
+ID   T-cell receptor
+ML   RNA
+AU   EC
+ST   Gold Standard
+XX
+DE   Homo sapiens mRNA for T-cell receptor alpha chain, clone TCR1A.12
+XX
+CC   Annotate as T-cell and not T cell.
+XX
+KW   T-cell receptor alpha; TCR alpha chain; TCR1A gene; variable region;
+KW   joining segment; constant region.
+XX
+CC
+CC   For IMGT secondary submissions please add following comment
+CC   and delete the submission reference:
+CC
+CC   Data kindly provided by IMGT, the International ImMunoGeneTics
+CC   Database http://imgt.cines.fr
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..402
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="mRNA"
+FT                   /sex="male"
+FT                   /cell_type="CD4+ T-lymphocyte"
+FT                   /rearranged
+FT                   /clone="TCR1A.12"
+FT   sig_peptide     1..54
+FT                   /gene="TCR1A"
+FT   CDS             1..402
+FT                   /gene="TCR1A"
+FT                   /product="T-cell receptor alpha chain"
+FT   mat_peptide     55..399
+FT                   /gene="TCR1A"
+FT                   /product="T-cell receptor alpha chain"
+FT   V_region        55..327
+FT                   /gene="TCR1A"
+FT   J_segment       328..393
+FT                   /gene="TCR1A"
+FT   C_region        394..>402
+FT                   /gene="TCR1A"

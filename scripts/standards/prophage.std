@@ -1,0 +1,49 @@
+ID   Prophage
+ML   DNA
+AU   PB
+ST   Gold Standard
+XX  
+DE   Phage EH123 proviral xis gene and int gene
+XX
+KW   xis gene; excisionase; int gene; integrase.
+XX  
+FH   Key             Location/Qualifiers
+FH   
+FT   source          1..1938
+FT                   /organism="phage EH123"
+FT                   /specific_host="Escherichia coli EH123"
+FT                   /lab_host="Escherichia coli K12"
+FT                   /mol_type="genomic DNA"
+FT                   /proviral
+FT                   /focus
+FT   source          1939..2320
+FT                   /organism="Escherichia coli K12"
+FT   CDS             306..560
+FT                   /gene="xis"
+FT                   /product="putative excisionase"
+FT                   /function="required for excision of prophage from host 
+FT                   genome"
+FT   CDS             594..1880
+FT                   /gene="int"
+FT                   /product="putative integrase"
+FT                   /function="required for excision of prophage from host 
+FT                   genome through site specific recombination"
+FT   misc_recomb     1920..1938
+FT                   /organism="bacteriophage 123"
+CC   The organism qualifier is optional - if it is not present, then the 
+CC   organism is presumed to be the same as that in the source feature.
+FT                   /evidence=experimental
+FT                   /note="attR core"
+FT                   /note="bacteriophage attachment site"
+XX
+CC   Where host features have been split up by the inserted prophage it is 
+CC   necessary of indicate this in a note qualifier on the feature. 
+
+
+
+
+
+
+
+
+

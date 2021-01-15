@@ -1,0 +1,51 @@
+ID   Chromosome
+ML   DNA
+AU   DH
+ST   Gold Standard
+XX
+CC   Note that the /chromosome qualifier should not be used to annotate segments
+CC   in multipart viral genomes.  The segment should be annotated using the new
+CC   /segment qualifier.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..3567
+FT                   /organism="Drosophila melanogaster"
+FT                   /mol_type="genomic DNA"
+FT                   /strain="Simulans"
+FT                   /dev_stage="adult"
+FT                   /sex="female"
+FT                   /chromosome="3R"
+FT                   /map="84E1" 
+XX
+CC   Map regions can also be more than one polytene band ie 90E-91A.
+
+--------------------------------------------------------------------
+XX 
+FH   Key             Location/Qualifiers
+XX
+FT   source          1..8151
+FT                   /organism="Saccharomyces cerevisiae"
+FT                   /chromosome="VIII"
+FT                   /map="right arm"
+FT                   /clone="pY8000"
+
+
+-------------------------------------------------------------------- 
+
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..2908
+FT                   /organism="Homo sapiens"
+FT                   /chromosome="7"
+FT                   /map="7q31-q32"
+FT                   /clone="ABC" 
+
+----------------------------------------------------------------------
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+ID   Expression vector
+ML   RNA
+AU   MAT
+ST   Gold Standard
+XX
+CC   Expression vectors are annotated as organisms and cover the whole sequence.
+XX
+DE   Expression vector pTRI-HIN, partial
+XX
+KW   TRI-HIN fusion protein.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..323
+FT                   /focus
+FT                   /mol_type="other RNA"
+FT                   /organism="Expression vector pTH-HIN"
+FT   source          43..192
+FT                   /mol_type="other RNA"
+FT                   /organism="Homo sapiens"
+FT   source          217..288
+FT                   /mol_type="other RNA"
+FT                   /organism="Camelus dromedarius"
+FT   CDS             <1..309
+FT                   /codon_start=1
+FT                   /transl_table=1
+FT                   /product="TRI-HIN fusion protein"
+

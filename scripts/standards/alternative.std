@@ -1,0 +1,85 @@
+ID   Alternative splicing
+ML   DNA
+AU   RJV
+ST   Gold Standard
+XX
+DE   Emericella nidulans partial hscA gene for heat shock protein 70
+XX
+KW   heat shock cognate; heat shock protein 70; hscA gene;
+KW   alternative splicing.
+XX
+FH   Key             Location/Qualifiers
+FH
+XX
+CC   Names for transcript products that result from alternative splicing should
+CC   be included in a /note qualifier.  In simple cases the shorter or minor
+CC   transcripts are referred to as alternative.
+XX
+FT   source          1..1500
+FT                   /organism="Emericella nidulans"
+FT                   /mol_type="genomic DNA"
+FT                   /chromosome="VII"
+FT                   /strain="WG096"
+FT   TATA_signal     735..741
+FT                   /gene="hscA"
+FT   mRNA            join(769..867,920..970,1023..1149,1199..1364,1417..>1500)
+FT                   /gene="hscA"
+FT   mRNA            join(774..867,920..970,1118..1149,1199..1364,1417..>1500)
+FT                   /note="alternative"
+FT                   /gene="hscA"
+FT   CDS             join(825..867,920..970,1023..1149,1199..1364,1417..>1500)
+FT                   /function="heat shock cognate"
+FT                   /gene="hscA"
+FT                   /product="heat shock protein 70"
+FT                   /note="long variant"
+FT                   /translation="MSDEVYEGAIGIDLGTTYSCVANYEGTNVEIIANEQGSYTTPSFV
+FT                   SFTDKERLIGEAAKNQAAMNPQNTIFDIKRLIGRRYEDPIVKKDVESWPFKVVDQGGNP
+FT                   AVEVEYLGETKTFTPQEISSMVLMKMKEVAETKLGKKVEKAVITVPAYFNDNQ"
+FT   CDS             join(1118..1149,1199..1364,1417..>1500)
+FT                   /note="alternative"
+FT                   /function="heat shock cognate"
+FT                   /gene="hscA"
+FT                   /product="heat shock protein 70"
+FT                   /note="short variant"
+FT                   /translation="MNPQNTIFDIKRLIGRRYEDPIVKKDVESWPFKVVDQGGNP
+FT                   AVEVEYLGETKTFTPQEISSMVLMKMKEVAETKLGKKVEKAVITVPAYFNDNQ"
+FT   exon            769..867
+FT                   /number=1
+FT                   /gene="hscA"
+FT   exon            774..867
+FT                   /note="alternative"
+FT                   /number=1
+FT                   /gene="hscA"
+FT   intron          868..919
+FT                   /number=1
+FT                   /gene="hscA"
+FT   exon            920..970
+FT                   /number=2
+FT                   /gene="hscA"
+FT   intron          971..1022
+FT                   /number=2
+FT                   /gene="hscA"
+FT   intron          971..1117
+FT                   /number=2
+FT                   /gene="hscA"
+FT                   /note="alternative"
+FT   exon            1023..1149
+FT                   /number=3
+FT                   /gene="hscA"
+FT   exon            1118..1149
+FT                   /number=3
+FT                   /gene="hscA"
+FT                   /note="alternative"
+FT   intron          1150..1198
+FT                   /number=3
+FT                   /gene="hscA"
+FT   exon            1199..1364
+FT                   /number=4
+FT                   /gene="hscA"
+FT   intron          1365..1416
+FT                   /number=4
+FT                   /gene="hscA"
+FT   exon            1417..>1500
+FT                   /number=5
+FT                   /gene="hscA"
+XX
